@@ -9,7 +9,7 @@
 .header-content {
     display: flex;
     width: 40px;
-    padding: 2% 0 0 3%;
+    padding: 1% 0% 5% 0%;
     gap: 15px;
 }
 
@@ -20,7 +20,26 @@ body {
 }
 
 .body-content {
+    padding: 2% 0% 0% 3%;
     font-family: "Source Code Pro", monospace;
+}
+
+.body-content__title {
+    display: flex;
+    gap: 8px;
+}
+
+.body-content__title__image {
+    width: 45px;
+}
+
+.body-content__title__txt {
+    font-size: 40px;
+}
+
+.body-content__boxes {
+    display: flex;
+    gap: 8px;
 }
 
 .footer-content {
