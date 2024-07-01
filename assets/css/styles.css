@@ -88,4 +88,7 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 550;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
