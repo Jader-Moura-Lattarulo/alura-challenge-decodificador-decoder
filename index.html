@@ -8,7 +8,11 @@
   </head>
   <header class="header-content">
     <img src="./assets/images/logo-alura.svg" alt="logo alura" />
-    <img class="header-content__img-one" src="./assets/images/one_logo.svg" alt="logo one" />
+    <img
+      class="header-content__img-one"
+      src="./assets/images/one_logo.svg"
+      alt="logo one"
+    />
     <img
       src="./assets/images/logica-programacao-mergulhe-programacao-javascript.svg"
       alt="Badge de conclusão de curso da Alura lógica de programação - JavaScript"
@@ -44,12 +48,19 @@
       <h1 class="body-content__title__txt">Enigma machine</h1>
     </section>
     <section class="body-content__boxes">
-      <p class="body-content__boxes__input">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-        beatae aspernatur et molestiae facilis sed ex expedita sit alias?
-        Corrupti delectus ducimus, eum nihil vel explicabo voluptates eaque nisi
-        itaque.
-      </p>
+      <div class="body-content__boxes__input">
+        <input
+          type="text"
+          id="get_txt_to_encrypt"
+          class="body-content__boxes__input__place"
+          placeholder="Inira o texto a ser encriptado..."
+        />
+        <div class="body-content__boxes__buttons">
+          <button onclick="" class="">Criptografar</button>
+          <button onclick="" class="">Descriptografar</button>
+        </div>
+      </div>
+
       <p class="body-content__boxes__output">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
         excepturi, consequatur beatae eaque eveniet facilis nostrum cupiditate?
