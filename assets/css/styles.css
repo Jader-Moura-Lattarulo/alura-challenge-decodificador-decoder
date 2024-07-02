@@ -239,7 +239,11 @@
     margin-right: 0;
 }
 
-.footer-content {
+.footer {
+    padding: 1em 0;
+}
+
+.footer__content {
     padding: 12px;
     width: 100%;
     color:#102C57;
