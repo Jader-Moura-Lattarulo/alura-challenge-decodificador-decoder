@@ -70,11 +70,11 @@ body {
     overflow: auto;
     box-sizing: border-box;
     border: 2px solid #FFC26F;
-    
     color: #FEFAF6;
+    text-align:left;
 }
 
-.body-content__boxes__input__place__lets-do-it {
+.body-content__boxes__input__place__type-here {
     position: absolute;
     left: 5px;
     top: 16px;
@@ -83,9 +83,13 @@ body {
     color: #FEFAF6;
 }
 
-.body-content__boxes__input__place__txt:focus ~ span,
+.body-content__boxes__input__place__txt:focus ~ span {
+    transform: translateY(-44px);
+}
+
 .body-content__boxes__input__place__txt:valid ~ span {
     transform: translateY(-44px);
+    color: #102C57;
 }
 
 .body-content__boxes__buttons {
