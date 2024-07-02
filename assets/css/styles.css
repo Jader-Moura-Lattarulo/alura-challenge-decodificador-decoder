@@ -89,6 +89,15 @@
     color: #FEFAF6;
 }
 
+.body-content__boxes__input__place__txt:focus ~ span {
+    transform: translateY(-44px);
+}
+
+.body-content__boxes__input__place__txt:valid ~ span {
+    transform: translateY(-44px);
+    color: #102C57;
+}
+
 .body-content__main__boxes__alert {
     padding: 10px;
     display: flex;
@@ -104,15 +113,6 @@
 .body-content__main__boxes__alert__txt {
     width: 25px;
     
-}
-
-.body-content__boxes__input__place__txt:focus ~ span {
-    transform: translateY(-44px);
-}
-
-.body-content__boxes__input__place__txt:valid ~ span {
-    transform: translateY(-44px);
-    color: #102C57;
 }
 
 .body-content__boxes__buttons {
@@ -135,6 +135,11 @@
     cursor: pointer;
     margin-top: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out;
+}
+
+.body-content__boxes__buttons__encrypt-decrypt:hover {
+    background-color: #7194c9;
 }
 
 .body-content__boxes__buttons__images {
