@@ -205,6 +205,18 @@
     bottom: 5px;
 }
 
+.body-content__boxes__output__place__img {
+    width: 20px;
+    height: 15px;
+}
+
+.body-content__boxes__output__place__img__robo {
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
 .body-content__boxes__output__place__msg {
     display: flex;
     flex-direction: column;
