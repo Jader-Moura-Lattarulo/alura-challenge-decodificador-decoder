@@ -151,7 +151,11 @@
 }
 
 .body-content__boxes__output__place {
+    width: 400px;
+    height: 656px;
+    background-color: red;
     position: relative;
+    border-radius: 16px;
 }
 
 .body-content__boxes__output__place__txt {
@@ -182,10 +186,14 @@
 
 .body-content__boxes__buttons__copy {
     flex: 1;
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
     font-size: 20px;
     margin-right: 15%;
     border-radius: 16px;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    bottom: 5px;
 }
 
 .body-content__boxes__buttons__copy:last-child {
