@@ -6,6 +6,12 @@
     border: 0;
 }
 
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .header-content {
     display: flex;
     width: 40px;
@@ -119,7 +125,11 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 550;
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
     left: 0;
+    position:absolute;
+}
+
+.body-content {
+    flex: 1;
 }

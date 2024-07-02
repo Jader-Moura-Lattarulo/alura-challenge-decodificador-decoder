@@ -6,90 +6,114 @@
     <title>Decodificador</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
-  <header class="header-content">
-    <img src="./assets/images/logo-alura.svg" alt="logo alura" />
-    <img
-      class="header-content__img-one"
-      src="./assets/images/one_logo.svg"
-      alt="logo one"
-    />
-    <img
-      src="./assets/images/logica-programacao-mergulhe-programacao-javascript.svg"
-      alt="Badge de conclusão de curso da Alura lógica de programação - JavaScript"
-    />
-    <img
-      src="./assets/images/logica-programacao-funcoes-listas.svg"
-      alt="Badge de conclusão de curso da Alura lógica de programação - funções e listas"
-    />
-    <img
-      src="./assets/images/html-css-ambiente-arquivos-tags.svg"
-      alt="Badge de conclusão de curso da Alura lógica de programação - HTML e CSS"
-    />
-    <img
-      src="./assets/images/git-github-compartilhando-colaborando-projetos.svg"
-      alt="Badge de conclusão de curso da Alura lógica de programação - Git e GitHub"
-    />
-    <img
-      src="./assets/images/chatgpt-otimizando-qualidade-resultados.svg"
-      alt="Badge de conclusão de curso da Alura lógica de programação - Chat GPT"
-    />
-    <img
-      src="./assets/images/challenge-decodificador-texto.svg"
-      alt="Badge de conclusão de curso da Alura lógica de programação - Desafio do decodificador"
-    />
-  </header>
+
   <body class="body-content">
-    <section class="body-content__title">
-      <img
-        class="body-content__title__image"
-        src="./assets/images/criptografia-de-dados.svg"
-        alt="Chave em frente a um documento criptografado"
-      />
-      <h1 class="body-content__title__txt">Enigma machine</h1>
-    </section>
-    <section class="body-content__boxes">
-      <div class="body-content__boxes__input">
-        <div class="body-content__boxes__input__place">
-          <textarea
-            autocomplete="off"
-            required
-            type="text"
-            id="get_txt_to_encrypt"
-            class="body-content__boxes__input__place__txt"
-          ></textarea>
+    <div class="body-content__wrapper">
+      <header class="header-content">
+        <img src="./assets/images/logo-alura.svg" alt="logo alura" />
+        <img
+          class="header-content__img-one"
+          src="./assets/images/one_logo.svg"
+          alt="logo one"
+        />
+        <img
+          src="./assets/images/logica-programacao-mergulhe-programacao-javascript.svg"
+          alt="Badge de conclusão de curso da Alura lógica de programação - JavaScript"
+        />
+        <img
+          src="./assets/images/logica-programacao-funcoes-listas.svg"
+          alt="Badge de conclusão de curso da Alura lógica de programação - funções e listas"
+        />
+        <img
+          src="./assets/images/html-css-ambiente-arquivos-tags.svg"
+          alt="Badge de conclusão de curso da Alura lógica de programação - HTML e CSS"
+        />
+        <img
+          src="./assets/images/git-github-compartilhando-colaborando-projetos.svg"
+          alt="Badge de conclusão de curso da Alura lógica de programação - Git e GitHub"
+        />
+        <img
+          src="./assets/images/chatgpt-otimizando-qualidade-resultados.svg"
+          alt="Badge de conclusão de curso da Alura lógica de programação - Chat GPT"
+        />
+        <img
+          src="./assets/images/challenge-decodificador-texto.svg"
+          alt="Badge de conclusão de curso da Alura lógica de programação - Desafio do decodificador"
+        />
+      </header>
 
-          <span class="body-content__boxes__input__place__type-here"
-            >Type here...</span
-          >
-        </div>
-        <div class="body-content__boxes__buttons">
-          <button
-            onclick=""
-            class="body-content__boxes__buttons__encrypt-decrypt"
-          >
-            Criptografar
-          </button>
-          <button
-            onclick=""
-            class="body-content__boxes__buttons__encrypt-decrypt"
-          >
-            Descriptografar
-          </button>
-        </div>
-      </div>
+      <main class="body-content__main">
+        <section class="body-content__title">
+          <img
+            class="body-content__title__image"
+            src="./assets/images/criptografia-de-dados.svg"
+            alt="Chave em frente a um documento criptografado"
+          />
+          <h1 class="body-content__title__txt">Enigma machine</h1>
+        </section>
+        <section class="body-content__boxes">
+          <div class="body-content__boxes__input">
+            <div class="body-content__boxes__input__place">
+              <textarea
+                autocomplete="off"
+                required
+                type="text"
+                id="get_txt_to_encrypt"
+                class="body-content__boxes__input__place__txt"
+              ></textarea>
 
-      <p class="body-content__boxes__output">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-        excepturi, consequatur beatae eaque eveniet facilis nostrum cupiditate?
-        Illo et aspernatur doloribus minima possimus cumque, inventore ullam!
-        Eum velit amet sapiente.
-      </p>
-    </section>
+              <span class="body-content__boxes__input__place__type-here"
+                >Type here...</span
+              >
+            </div>
+            <div class="body-content__boxes__buttons">
+              <button
+                onclick=""
+                class="body-content__boxes__buttons__encrypt-decrypt"
+              >
+                Criptografar
+              </button>
+              <button
+                onclick=""
+                class="body-content__boxes__buttons__encrypt-decrypt"
+              >
+                Descriptografar
+              </button>
+            </div>
+          </div>
+
+          <div class="body-content__boxes__input">
+            <div class="body-content__boxes__input__place">
+              <textarea
+                autocomplete="off"
+                required
+                type="text"
+                id="get_txt_to_encrypt"
+                class="body-content__boxes__input__place__txt"
+              ></textarea>
+
+              <span class="body-content__boxes__input__place__type-here"
+                >Type here...</span
+              >
+            </div>
+            <div class="body-content__boxes__buttons">
+              <button
+                onclick=""
+                class="body-content__boxes__buttons__encrypt-decrypt"
+              >
+                Copiar
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer-content">
+      <nav>
+        <p>Desenvolvido por <a href="#">Jader</a>,</p>
+        <p>para o desafio <a href="#">Alura</a>.</p>
+      </nav>
+    </footer>
   </body>
-  <footer class="footer-content">
-    <nav>
-      <p>Desenvolvido por <a href="#">Jader</a>,</p>
-      <p>para o desafio <a href="#">Alura</a>.</p>
-    </nav>
-  </footer>
 </html>
