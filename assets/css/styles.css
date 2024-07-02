@@ -6,7 +6,16 @@
     border: 0;
 }
 
-.wrapper {
+.body-content {
+    padding: 0% 0% 0% 3%;
+    font-family: "Source Code Pro", monospace;
+    box-sizing: border-box;
+    background-color: #102C57;
+    color: #FEFAF6;
+    flex: 1;
+}
+
+.body-content__wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -23,49 +32,37 @@
     height: 100px;
 }
 
-.body-content {
-    box-sizing: border-box;
-    background-color: #102C57;
-    color: #FEFAF6;
-    flex: 1;
-}
-
-.body-content {
-    padding: 0% 0% 0% 3%;
-    font-family: "Source Code Pro", monospace;
-}
-
-.body-content__title {
+.body-content__main__title {
     padding: 0% 0% 3% 0%;
     display: flex;
     gap: 8px;
 }
 
-.body-content__title__image {
+.body-content__main__title__image {
     width: 60px;
 }
 
-.body-content__title__txt {
+.body-content__main__title__txt {
     font-size: 40px;
 }
 
-.body-content__boxes {
+.body-content__main__boxes {
     display: flex;
     gap: 8px;
 }
 
-.body-content__boxes__input {
+.body-content__main__boxes__input {
     padding: 0% 5% 8% 8%;
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
 
-.body-content__boxes__input__place {
+.body-content__main__boxes__input__place {
     position: relative;
 }
 
-.body-content__boxes__input__place__txt {
+.body-content__main__boxes__input__place__txt {
     padding: 15%, 15%, 15%, 0%;
     width: 550px;
     height: 500px;
@@ -82,7 +79,7 @@
     resize: none;
 }
 
-.body-content__boxes__input__place__type-here {
+.body-content__main__boxes__input__place__type-here {
     position: absolute;
     left: 5px;
     top: 16px;
@@ -91,12 +88,21 @@
     color: #FEFAF6;
 }
 
-.body-content__boxes__alert {
+.body-content__main__boxes__alert {
+    padding: 10px;
+    display: flex;
+    width: 550px;
     align-items: center;
 }
 
-.body-content__boxes__alert__img {
-    height: 20px;
+.body-content__main__boxes__alert__img {
+    height: 30px;
+    
+}
+
+.body-content__main__boxes__alert__txt {
+    width: 25px;
+    
 }
 
 .body-content__boxes__input__place__txt:focus ~ span {
@@ -116,10 +122,6 @@
     width: 100%;
 }
 
-.body-content__boxes__buttons__images {
-    height: 20px;
-}
-
 .body-content__boxes__buttons__encrypt-decrypt {
     flex: 1;
     padding: 20px;
@@ -127,6 +129,13 @@
     margin-right: 15%;
     border-radius: 16px;
     align-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.body-content__boxes__buttons__images {
+    height: 20px;
 }
 
 .body-content__boxes__buttons__encrypt-decrypt:last-child {
