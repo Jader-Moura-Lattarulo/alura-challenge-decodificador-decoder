@@ -49,15 +49,32 @@
     </section>
     <section class="body-content__boxes">
       <div class="body-content__boxes__input">
-        <input
-          type="text"
-          id="get_txt_to_encrypt"
-          class="body-content__boxes__input__place"
-          placeholder="Inira o texto a ser encriptado..."
-        />
+        <div class="body-content__boxes__input__place">
+          <textarea
+            autocomplete="off"
+            required
+            type="text"
+            id="get_txt_to_encrypt"
+            class="body-content__boxes__input__place__txt"
+          ></textarea>
+
+          <span class="body-content__boxes__input__place__lets-do-it"
+            >Type here...</span
+          >
+        </div>
         <div class="body-content__boxes__buttons">
-          <button onclick="" class="body-content__boxes__buttons__encrypt-decrypt">Criptografar</button>
-          <button onclick="" class="body-content__boxes__buttons__encrypt-decrypt">Descriptografar</button>
+          <button
+            onclick=""
+            class="body-content__boxes__buttons__encrypt-decrypt"
+          >
+            Criptografar
+          </button>
+          <button
+            onclick=""
+            class="body-content__boxes__buttons__encrypt-decrypt"
+          >
+            Descriptografar
+          </button>
         </div>
       </div>
 

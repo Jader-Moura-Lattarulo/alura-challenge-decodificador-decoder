@@ -55,11 +55,37 @@ body {
 }
 
 .body-content__boxes__input__place {
-    padding: 15%, 15%, 15%, 15%;
+    position: relative;
+}
+
+.body-content__boxes__input__place__txt {
+    padding: 5%, 10%, 10%, 10%;
     width: 400px;
     height: 500px;
     border-radius: 16px;
     margin-bottom: 10px;
+    background-color: #102C57;
+    font-size: 20px;
+    text-orientation: upright;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 2px solid #FFC26F;
+    
+    color: #FEFAF6;
+}
+
+.body-content__boxes__input__place__lets-do-it {
+    position: absolute;
+    left: 5px;
+    top: 16px;
+    transition: 0.5s;
+    font-size: 20px;
+    color: #FEFAF6;
+}
+
+.body-content__boxes__input__place__txt:focus ~ span,
+.body-content__boxes__input__place__txt:valid ~ span {
+    transform: translateY(-44px);
 }
 
 .body-content__boxes__buttons {
