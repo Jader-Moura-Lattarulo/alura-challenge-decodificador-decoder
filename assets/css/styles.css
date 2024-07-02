@@ -124,18 +124,18 @@
 
 .body-content__boxes__buttons__encrypt-decrypt {
     flex: 1;
-    padding: 20px;
+    display: flex;
+    padding: 20px 40px 20px 40px;
     font-size: 20px;
     margin-right: 15%;
     border-radius: 16px;
-    align-content: center;
     align-items: center;
     cursor: pointer;
     margin-top: 10px;
 }
 
 .body-content__boxes__buttons__images {
-    height: 20px;
+    height: 30px;
 }
 
 .body-content__boxes__buttons__encrypt-decrypt:last-child {
