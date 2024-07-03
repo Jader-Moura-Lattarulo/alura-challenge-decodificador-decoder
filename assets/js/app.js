@@ -35,6 +35,24 @@ document.addEventListener("DOMContentLoaded", function() {
         userText.value = userText.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     }
 
+    //Função para encriptar o texto
+    function encrypt() {
+         userText.value = userText.value.replace(/a/g,"ai")
+                                        .replace(/e/g,"enter")
+                                        .replace(/i/g,"imes")
+                                        .replace(/o/g,"ober")
+                                        .replace(/u/g,"ufat");
+    }
+
+    //Função para criptografar o texto
+    function decrypt() {
+        userText.value = userText.value.replace(/ufat/g,"u")
+                                       .replace(/ober/g,"o")
+                                       .replace(/imes/g,"i")
+                                       .replace(/enter/g,"e")
+                                       .replace(/ai/g, "a");
+    }
+
     // Adicionar evento ao botão "Copiar"
     copyButton.addEventListener("click", function() {
         hideCopyButton();
@@ -45,16 +63,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const decryptButton = document.querySelector(".body-content__boxes__buttons__encrypt-decrypt:nth-child(2)");
 
     encryptButton.addEventListener("click", function() {
-        // Sua lógica de criptografia
+        //lógica de criptografia
         toLowerCase();
         removeAccents();
+        encrypt();
         showCopyButton();
     });
 
     decryptButton.addEventListener("click", function() {
-        // Sua lógica de descriptografia
+        //lógica de descriptografia
         toLowerCase();
         removeAccents();
+        decrypt();
         showCopyButton();
     });
 });
