@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const foundCopied = document.getElementById("no_found_msg_copied");
     const useAsYouWant = document.getElementById("enter_txt");
     const userText = document.getElementById("get_txt_to_encrypt");
+    const txtEncrypted = document.getElementById("txtEncrypted");
 
     copyButton.style.display = "none"; // Garantir que o botão esteja invisível ao carregar a página
-
-    // Função para mostrar o botão "Copiar"
+    txtEncrypted.style.display = "none";
+    // Função para mostrar o botão "Copiar" e habilitar a área do texto encriptado
     function showCopyButton() {
         copyButton.style.display = "block";
         robotImage.style.display = "none";
-        foundCopied.style.display = "none";
-        useAsYouWant.style.display = "none";
+        txtEncrypted.style.display = "block";
     }
 
     // Função para esconder o botão "Copiar"
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         robotImage.style.display = "block";
         foundCopied.style.display = "block";
         useAsYouWant.style.display = "block";
+        txtEncrypted.style.display = "none";
         foundCopied.innerText = "Texto copiado com sucesso!";
         useAsYouWant.innerText = "Utilize seu texto como quiser!";
     }
@@ -35,16 +36,24 @@ document.addEventListener("DOMContentLoaded", function() {
         userText.value = userText.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     }
 
-    //Função para encriptar o texto
-    function encrypt() {
-         userText.value = userText.value.replace(/a/g,"ai")
-                                        .replace(/e/g,"enter")
-                                        .replace(/i/g,"imes")
-                                        .replace(/o/g,"ober")
-                                        .replace(/u/g,"ufat");
+    //Função para limpar o conteúdo da caixa de entrada
+    function clearTextArea(){
+        userText.value = "";
     }
 
     //Função para criptografar o texto
+    function encrypt() {
+        userText.value = userText.value.replace(/a/g,"ai")
+                                       .replace(/e/g,"enter")
+                                       .replace(/i/g,"imes")
+                                       .replace(/o/g,"ober")
+                                       .replace(/u/g,"ufat");
+
+        foundCopied.innerText = "Aqui está o texto criptografado:"
+        txtEncrypted.innerText = `${userText.value}`
+    }
+
+    //Função para descriptografar o texto
     function decrypt() {
         userText.value = userText.value.replace(/ufat/g,"u")
                                        .replace(/ober/g,"o")
@@ -67,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
         toLowerCase();
         removeAccents();
         encrypt();
+        clearTextArea();
         showCopyButton();
     });
 
