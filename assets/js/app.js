@@ -22,7 +22,39 @@ document.addEventListener('DOMContentLoaded', function() {
         txt.style.display = "block";
         foundCopied.innerText = "Texto copiado com sucesso!";
         txt.innerText = "Utilize seu texto como quiser!";
+        txt.style.display = "block";
     }
+
+    function replaceLetters(text) {
+        function removeAccents(str) {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+
+        const replacements = {
+            "a": "ai",
+            "e": "enter",
+            "i": "imes",
+            "o": "ober",
+            "u": "ufat"
+        };
+
+        let result = "";
+        text = removeAccents(text.toLowerCase());
+
+        for (let char of text) {
+            if (char.toLowerCase() in replacements) {
+                result += replacements[char.toLowerCase()];
+            } else {
+                result += char;
+            }
+        }
+        return result;
+    }
+
+    
+
+
+    
 
     // Adicionar evento ao botão "Copiar"
     copyButton.addEventListener('click', function() {
