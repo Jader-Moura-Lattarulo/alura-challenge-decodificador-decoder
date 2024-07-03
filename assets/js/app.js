@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const copyButton = document.getElementById('copy');
+    const copyButton = document.getElementById("copy");
+    const robotImage = document.getElementById("robot")
     copyButton.style.display = 'none'; // Garantir que o botão esteja invisível ao carregar a página
 
     // Função para mostrar o botão "Copiar"
     function showCopyButton() {
-        copyButton.style.display = 'block';
+        copyButton.style.display = "block";
+        robotImage.style.display = "none"
     }
 
     // Função para esconder o botão "Copiar"
     function hideCopyButton() {
-        copyButton.style.display = 'none';
+        copyButton.style.display = "none";
+        robotImage.style.display = "block";
     }
 
     // Adicionar evento ao botão "Copiar"
