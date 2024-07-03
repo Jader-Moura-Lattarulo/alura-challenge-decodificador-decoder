@@ -179,13 +179,19 @@
 }
 
 .body-content__boxes__output__place__txt-area__title {
-    
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Source Code Pro", monospace;
     flex-direction: column;
     width: 23.5rem;
     height: 5.5rem;
 }
 
 .body-content__boxes__output__place__txt-area__answer {
+    font-size: 25px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 500;
+    color: #FEFAF6;
     width: 23.5rem;
     height: 28rem;
     top: 17%;

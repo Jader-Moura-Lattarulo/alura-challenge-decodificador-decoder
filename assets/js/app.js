@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
         copyButton.style.display = "block";
         robotImage.style.display = "none";
         txtEncrypted.style.display = "block";
+        foundCopied.style.display = "none";
+        useAsYouWant.style.display = "none";
+        hereEncrypted.style.display = "block";
     }
 
     // Função para esconder o botão "Copiar"
@@ -23,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         foundCopied.style.display = "block";
         useAsYouWant.style.display = "block";
         txtEncrypted.style.display = "none";
+        hereEncrypted.style.display = "none";
         foundCopied.innerText = "Texto copiado com sucesso!";
         useAsYouWant.innerText = "Utilize seu texto como quiser!";
     }
