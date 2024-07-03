@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const useAsYouWant = document.getElementById("enter_txt");
     const userText = document.getElementById("get_txt_to_encrypt");
     const txtEncrypted = document.getElementById("txtEncrypted");
+    const hereEncrypted = document.getElementById("hereIsEncryptedText");
 
     copyButton.style.display = "none"; // Garantir que o botão esteja invisível ao carregar a página
     txtEncrypted.style.display = "none";
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                        .replace(/o/g,"ober")
                                        .replace(/u/g,"ufat");
 
-        foundCopied.innerText = "Aqui está o texto criptografado:"
+        hereEncrypted.innerText = "Aqui está o texto criptografado:"
         txtEncrypted.innerText = `${userText.value}`
     }
 
