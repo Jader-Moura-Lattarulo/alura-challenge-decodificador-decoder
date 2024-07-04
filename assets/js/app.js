@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const userText = document.getElementById("get_txt_to_encrypt");
     const txtEncrypted = document.getElementById("txtEncrypted");
     const hereEncrypted = document.getElementById("hereIsEncryptedText");
+    const txtWillBeCopied = document.getElementById("txtEncrypted");
 
     copyButton.style.display = "none"; // Garantir que o botão esteja invisível ao carregar a página
     txtEncrypted.style.display = "none";
@@ -65,10 +66,19 @@ document.addEventListener("DOMContentLoaded", function() {
                                        .replace(/imes/g,"i")
                                        .replace(/enter/g,"e")
                                        .replace(/ai/g, "a");
+
+        hereEncrypted.innerText = "Aqui está o texto descriptografado:"
+        txtEncrypted.innerText = `${userText.value}`
     }
 
-    // Adicionar evento ao botão "Copiar"
+    // Função para copiar o texto cripto/descriptografado
+
+    function copy() {
+        navigator.clipboard.writeText(txtWillBeCopied.value);
+    }
+
     copyButton.addEventListener("click", function() {
+        copy();
         hideCopyButton();
     });
 
@@ -90,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
         toLowerCase();
         removeAccents();
         decrypt();
+        clearTextArea();
         showCopyButton();
     });
 });
