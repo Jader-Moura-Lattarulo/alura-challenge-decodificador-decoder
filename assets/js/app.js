@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const hereEncrypted = document.getElementById("hereIsEncryptedText");
     const txtWillBeCopied = document.getElementById("txtEncrypted");
     const enterText = document.getElementById("type-here");
+    const onlySpecialCharactersRegex = /^[^a-zA-Z0-9]+$/;
+    const hasNormalCharactersRegex = /[a-zA-Z0-9]/;
 
     copyButton.style.display = "none"; // Garante que o botão esteja invisível ao carregar a página
     txtEncrypted.style.display = "none";
@@ -52,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Função para verificar se a entrada está vazia
     function isEmpty (){
         if (!userText.value || userText.value.trim() === "") {
-            enterText.value = "Tá vazio seu idiota";
+            enterText.value = "É preciso uma entrada de texto para a máquina funcionar.";
             enterText.innerHTML = enterText.value;
             return true;
         }
@@ -60,6 +62,21 @@ document.addEventListener("DOMContentLoaded", function() {
         enterText.innerHTML = enterText.value;
         return false;
     }
+
+    //Função para verificar se a entrada está só com caracteres especiais
+    function isSpecialCharacters() {
+        if (onlySpecialCharactersRegex.test(userText)) {
+            enterText.value = "Tem só caracteres especiais seu idiota";
+            enterText.innerHTML = enterText.value;
+            return false;
+        } else if (hasNormalCharactersRegex.test(userText)) {
+            enterText.value = "Digite aqui...";
+            enterText.innerHTML = enterText.value;
+            return true;
+        }
+        return false;
+    }
+    
 
     //Função para criptografar o texto
     function encrypt() {
@@ -93,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
     copyButton.addEventListener("click", function() {
         copy();
         hideCopyButton();
-    });
+    })
 
     // Adicionar eventos aos botões de criptografar e descriptografar
     const encryptButton = document.getElementById("encrypt");
@@ -102,6 +119,9 @@ document.addEventListener("DOMContentLoaded", function() {
     encryptButton.addEventListener("click", function() {
         //lógica de criptografia
         if (isEmpty()) {
+            return;
+        }
+        if (isSpecialCharacters()) {
             return;
         }
         toLowerCase();
@@ -114,6 +134,9 @@ document.addEventListener("DOMContentLoaded", function() {
     decryptButton.addEventListener("click", function() {
         //lógica de descriptografia
         if (isEmpty()) {
+            return;
+        }
+        if (isSpecialCharacters()) {
             return;
         }
         toLowerCase();
