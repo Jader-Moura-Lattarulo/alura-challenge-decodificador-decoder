@@ -116,6 +116,7 @@
 }
 
 .main-content__app__user-input__box__txt__area__type-here {
+    width: 48.5%;
     position: absolute;
     left: 3.3%;
     top: 1.3%;
@@ -126,7 +127,7 @@
 
 .main-content__app__user-input__box__txt__area:valid ~ span {
     transform: translateY(-2.1rem);
-    color: #102C57;
+    color: transparent;
 }
 
 .main-content__app__user-input__box__warning {
