@@ -187,14 +187,16 @@
     font-weight: 500;
 }
 
+.main-content__app__user-input__buttons__label__copy {
+    height: 30px;
+    width: 70px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 #decrypt-style {
     height: 30px;
     width: 173px;
-}
-
-#copy-style {
-    height: 30px;
-    width: 70px;
 }
 
 .main-content__app__user-input__buttons__encrypt-decrypt:hover {

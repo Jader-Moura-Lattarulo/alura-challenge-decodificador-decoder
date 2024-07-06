@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     txtEncrypted.style.display = "none";
     // Função para mostrar o botão "Copiar" e habilitar a área do texto encriptado
     function showCopyButton() {
-        copyButton.style.display = "block";
+        copyButton.style.display = "flex";
         robotImage.style.display = "none";
         txtEncrypted.style.display = "block";
         foundCopied.style.display = "none";
