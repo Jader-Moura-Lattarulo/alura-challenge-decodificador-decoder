@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const txtEncrypted = document.getElementById("txtEncrypted");
     const hereEncrypted = document.getElementById("hereIsEncryptedText");
     const txtWillBeCopied = document.getElementById("txtEncrypted");
+    const enterText = document.getElementById("type-here");
 
     copyButton.style.display = "none"; // Garante que o botão esteja invisível ao carregar a página
     txtEncrypted.style.display = "none";
@@ -46,6 +47,18 @@ document.addEventListener("DOMContentLoaded", function() {
     //Função para limpar o conteúdo da caixa de entrada
     function clearTextArea(){
         userText.value = "";
+    }
+
+    //Função para verificar se a entrada está vazia
+    function isEmpty (){
+        if (!userText.value || userText.value.trim() === "") {
+            enterText.value = "Tá vazio seu idiota";
+            enterText.innerHTML = enterText.value;
+            return true;
+        }
+        enterText.value = "Digite aqui...";
+        enterText.innerHTML = enterText.value;
+        return false;
     }
 
     //Função para criptografar o texto
@@ -88,6 +101,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     encryptButton.addEventListener("click", function() {
         //lógica de criptografia
+        if (isEmpty()) {
+            return;
+        }
         toLowerCase();
         removeAccents();
         encrypt();
@@ -97,6 +113,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     decryptButton.addEventListener("click", function() {
         //lógica de descriptografia
+        if (isEmpty()) {
+            return;
+        }
         toLowerCase();
         removeAccents();
         decrypt();
