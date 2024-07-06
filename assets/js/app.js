@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const hereEncrypted = document.getElementById("hereIsEncryptedText");
     const txtWillBeCopied = document.getElementById("txtEncrypted");
     const enterText = document.getElementById("type-here");
-    const onlySpecialCharactersRegex = /^[^a-zA-Z0-9]+$/;
-    const hasNormalCharactersRegex = /[a-zA-Z0-9]/;
 
     copyButton.style.display = "none"; // Garante que o botão esteja invisível ao carregar a página
     txtEncrypted.style.display = "none";
@@ -69,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const pattern = /^[^\w\s]+$/;
 
         if (pattern.test(text)) {
-            enterText.value = "Só tem caracteres.";
+            enterText.value = "É preciso ter algo além de caracteres especiais para a máquina funcionar.";
             enterText.innerHTML = enterText.value;
             clearTextArea();
             return true;
@@ -77,12 +75,13 @@ document.addEventListener("DOMContentLoaded", function() {
         return false;
     }
 
+    //Função para verificar se a entrada tem só números
     function isOnlyNumbers() {
         const text = userText.value;
         const pattern = /^\d+$/;
 
         if (pattern.test(text)) {
-            enterText.value = "Só tem números.";
+            enterText.value = "É preciso ter algo além de números para a máquina funcionar."
             enterText.innerHTML = enterText.value;
             clearTextArea();
             return true;
@@ -90,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return false;
     }
     
-
     //Função para criptografar textos
     function encrypt() {
         userText.value = userText.value.replace(/a/g,"ai")
