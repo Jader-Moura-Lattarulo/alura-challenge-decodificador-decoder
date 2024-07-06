@@ -8,11 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const hereEncrypted = document.getElementById("hereIsEncryptedText");
     const txtWillBeCopied = document.getElementById("txtEncrypted");
 
-    copyButton.style.display = "none"; // Garantir que o botão esteja invisível ao carregar a página
+    copyButton.style.display = "none"; // Garante que o botão esteja invisível ao carregar a página
     txtEncrypted.style.display = "none";
-    // Função para mostrar o botão "Copiar" e habilitar a área do texto encriptado
+
+    // Função para mostrar o botão "Copiar", habilitar a área do texto encriptado para copia, o robo sumir e aparecer textos
     function showCopyButton() {
-        copyButton.style.display = "flex";
+        copyButton.style.display = "flex"; //Faz o botão aparecer usando o layout flexível
         robotImage.style.display = "none";
         txtEncrypted.style.display = "block";
         foundCopied.style.display = "none";
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         hereEncrypted.style.display = "block";
     }
 
-    // Função para esconder o botão "Copiar"
+    // Função para esconder o botão "Copiar", aparecer o robo e textos
     function hideCopyButton() {
         copyButton.style.display = "none";
         robotImage.style.display = "block";
@@ -72,11 +73,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Função para copiar o texto cripto/descriptografado
-
     function copy() {
         navigator.clipboard.writeText(txtWillBeCopied.value);
     }
-
+    
     copyButton.addEventListener("click", function() {
         copy();
         hideCopyButton();
