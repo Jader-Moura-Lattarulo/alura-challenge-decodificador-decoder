@@ -173,8 +173,7 @@
 }
 
 .main-content__app__user-input__buttons__box-imgs {
-    height: 30px;
-    width: 35px;
+    height: 70%;
 }
 
 .main-content__app__user-input__buttons__box-imgs__images {
@@ -182,22 +181,14 @@
 }
 
 .main-content__app__user-input__buttons__label {
-    height: 30px;
-    width: 140px;
+    height: 50%;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 .main-content__app__user-input__buttons__label__copy {
-    height: 30px;
-    width: 70px;
     font-size: 1.2rem;
     font-weight: 500;
-}
-
-#decrypt-style {
-    height: 30px;
-    width: 173px;
 }
 
 .main-content__app__user-input__buttons__encrypt-decrypt:hover {
@@ -213,7 +204,7 @@
 .main-content__app__user-output__msg {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap:8px;
 }
 
 .main-content__app__user-output__msg__no-message {
@@ -309,8 +300,7 @@
 }
 
 .main-content__app__user-output__button__box-img {
-    height: 45px;
-    width: 35px;
+    height: 100%;
 }
 
 .main-content__app__user-output__button__box-img__image {
