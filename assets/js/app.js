@@ -78,41 +78,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
 
-    //Função para criptografar o texto
+    //Função para criptografar textos
     function encrypt() {
         userText.value = userText.value.replace(/a/g,"ai")
                                        .replace(/e/g,"enter")
                                        .replace(/i/g,"imes")
                                        .replace(/o/g,"ober")
                                        .replace(/u/g,"ufat")
-                                       .replace(/1/g,"mu")
-                                       .replace(/2/g,"siod")
-                                       .replace(/3/g,"sert")
-                                       .replace(/4/g,"ortauq")
-                                       .replace(/5/g,"ocnic")
-                                       .replace(/6/g,"sies")
-                                       .replace(/7/g,"etes")
-                                       .replace(/8/g,"otio")
-                                       .replace(/9/g,"evon")
-                                       .replace(/0/g,"orez");
+                                       
 
         hereEncrypted.innerText = "Aqui está o texto criptografado:"
         txtEncrypted.innerText = `${userText.value}`
     }
 
-    //Função para descriptografar o texto
+    //Função para criptografar textos
     function decrypt() {
-        userText.value = userText.value.replace(/orez/g,"0")
-                                       .replace(/evon/g,"9")
-                                       .replace(/otio/g,"8")
-                                       .replace(/etes/g,"7")
-                                       .replace(/sies/g,"6")
-                                       .replace(/ocnic/g,"5")
-                                       .replace(/ortauq/g,"4")
-                                       .replace(/sert/g,"3")
-                                       .replace(/siod/g,"2")
-                                       .replace(/mu/g,"1")
-                                       .replace(/ufat/g,"u")
+        userText.value = userText.value.replace(/ufat/g,"u")
                                        .replace(/ober/g,"o")
                                        .replace(/imes/g,"i")
                                        .replace(/enter/g,"e")
@@ -141,11 +122,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (isEmpty()) {
             return;
         }
-
         if (isSpecialCharacters()) {
             return;
         }
-
         toLowerCase();
         removeAccents();
         encrypt();
@@ -158,7 +137,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (isEmpty()) {
             return;
         }
-    
+        if (isSpecialCharacters()) {
+            return;
+        }
         toLowerCase();
         removeAccents();
         decrypt();
