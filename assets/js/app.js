@@ -65,13 +65,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Função para verificar se a entrada está só com caracteres especiais
     function isSpecialCharacters() {
-        if (onlySpecialCharactersRegex.test(userText)) {
-            enterText.value = "Tem só caracteres especiais seu idiota";
+        const text = userText.value;
+        const pattern = /^[^\w\s]+$/;
+
+        if (pattern.test(text)) {
+            enterText.value = "Só tem caracteres.";
             enterText.innerHTML = enterText.value;
-            return false;
-        } else if (hasNormalCharactersRegex.test(userText)) {
-            enterText.value = "Digite aqui...";
-            enterText.innerHTML = enterText.value;
+            clearTextArea();
             return true;
         }
         return false;
@@ -121,9 +121,11 @@ document.addEventListener("DOMContentLoaded", function() {
         if (isEmpty()) {
             return;
         }
+
         if (isSpecialCharacters()) {
             return;
         }
+
         toLowerCase();
         removeAccents();
         encrypt();
@@ -136,9 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (isEmpty()) {
             return;
         }
-        if (isSpecialCharacters()) {
-            return;
-        }
+    
         toLowerCase();
         removeAccents();
         decrypt();
