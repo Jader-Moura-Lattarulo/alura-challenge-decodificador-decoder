@@ -76,6 +76,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         return false;
     }
+
+    function isOnlyNumbers() {
+        const text = userText.value;
+        const pattern = /^\d+$/;
+
+        if (pattern.test(text)) {
+            enterText.value = "Só tem números.";
+            enterText.innerHTML = enterText.value;
+            clearTextArea();
+            return true;
+        }
+        return false;
+    }
     
 
     //Função para criptografar textos
@@ -125,6 +138,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (isSpecialCharacters()) {
             return;
         }
+        if (isOnlyNumbers()) {
+            return;
+        }
         toLowerCase();
         removeAccents();
         encrypt();
@@ -138,6 +154,9 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
         if (isSpecialCharacters()) {
+            return;
+        }
+        if (isOnlyNumbers()) {
             return;
         }
         toLowerCase();
