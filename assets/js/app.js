@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Adicionar eventos aos botões de criptografar e descriptografar
-    const encryptButton = document.querySelector(".body-content__boxes__buttons__encrypt-decrypt:nth-child(1)");
-    const decryptButton = document.querySelector(".body-content__boxes__buttons__encrypt-decrypt:nth-child(2)");
+    const encryptButton = document.getElementById("encrypt");
+    const decryptButton = document.getElementById("decrypt");
 
     encryptButton.addEventListener("click", function() {
         //lógica de criptografia

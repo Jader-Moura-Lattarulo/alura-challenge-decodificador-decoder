@@ -187,12 +187,12 @@
     font-weight: 500;
 }
 
-#decrypt {
+#decrypt-style {
     height: 30px;
     width: 173px;
 }
 
-#copy {
+#copy-style {
     height: 30px;
     width: 70px;
 }
