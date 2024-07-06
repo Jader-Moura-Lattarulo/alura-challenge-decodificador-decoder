@@ -84,7 +84,17 @@ document.addEventListener("DOMContentLoaded", function() {
                                        .replace(/e/g,"enter")
                                        .replace(/i/g,"imes")
                                        .replace(/o/g,"ober")
-                                       .replace(/u/g,"ufat");
+                                       .replace(/u/g,"ufat")
+                                       .replace(/1/g,"mu")
+                                       .replace(/2/g,"siod")
+                                       .replace(/3/g,"sert")
+                                       .replace(/4/g,"ortauq")
+                                       .replace(/5/g,"ocnic")
+                                       .replace(/6/g,"sies")
+                                       .replace(/7/g,"etes")
+                                       .replace(/8/g,"otio")
+                                       .replace(/9/g,"evon")
+                                       .replace(/0/g,"orez");
 
         hereEncrypted.innerText = "Aqui está o texto criptografado:"
         txtEncrypted.innerText = `${userText.value}`
@@ -92,11 +102,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Função para descriptografar o texto
     function decrypt() {
-        userText.value = userText.value.replace(/ufat/g,"u")
+        userText.value = userText.value.replace(/0/g,"orez")
+                                       .replace(/9/g,"evon")
+                                       .replace(/8/g,"otio")
+                                       .replace(/7/g,"etes")
+                                       .replace(/6/g,"sies")
+                                       .replace(/5/g,"ocnic")
+                                       .replace(/4/g,"ortauq")
+                                       .replace(/3/g,"sert")
+                                       .replace(/2/g,"siod")
+                                       .replace(/1/g,"mu")
+                                       .replace(/ufat/g,"u")
                                        .replace(/ober/g,"o")
                                        .replace(/imes/g,"i")
                                        .replace(/enter/g,"e")
-                                       .replace(/ai/g, "a");
+                                       .replace(/ai/g, "a")
 
         hereEncrypted.innerText = "Aqui está o texto descriptografado:"
         txtEncrypted.innerText = `${userText.value}`
