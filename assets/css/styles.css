@@ -340,11 +340,15 @@
     .main-content {
         position: relative;
         height: 88vh;
-    }   
+    }
+    
+    .main-content__logo__img-machine {
+        width: 70%;
+    }
 
     .main-content__app {
         justify-content: space-evenly;
-        width: 98%;
+        width: 85%;
         gap:7%;
     }
     
@@ -352,39 +356,57 @@
         gap:2%;
     }
 
+    .main-content__app__user-input__box__txt__area {
+        font-size: 1.3rem;
+    }
+
+    .main-content__app__user-input__box__txt__area__type-here {
+        font-size: 1.3rem;
+    }
+
     .main-content__app__user-input__box__warning {
         width: 95%;
         gap:3%;
     }
 
+    .main-content__app__user-input__box__warning__txt {
+        font-size: 0.9rem;
+    }
+
     .main-content__app__user-input__buttons__label {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+    }
+
+    .main-content__app__user-input__buttons__label__copy {
+        font-size: 0.9rem;
     }
 
     .main-content__app__user-output__msg__no-message {
         margin-left: 3%;
+        font-size: 1.83rem;
     }
 
     .main-content__app__user-output__msg__enter-text {
         margin-left: 3%;
+        font-size: 1.2rem;
     }
 
     .main-content__app__user-ouput__box__title {
-        margin-top: -140%;
-        height: 0%;               
+        margin-top: -142%;
+        font-size: 1.66rem;
+    }
+
+    .main-content__app__user-output__txt__answer {
+        font-size: 1.3rem;
     }
 
     .main-content__app__user-output__button {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        margin-top: 108%;
-        width: 97%;
-        height: 9%;
+        margin-top: 140%;
     }
 
     .footer-content {
-        padding: 0.3%;
+        padding: 0.2%;
+        font-size: 0.9rem;
         height: 6vh;
-    }    
+    }  
 }
