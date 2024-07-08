@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
         enterText.innerHTML = enterText.value;
         return false;
     }
-
+    //Função para não repetir frase
     function isNeeded(moreThan){
         return `É preciso ter algo além de ${moreThan} para a máquina funcionar.`;
     }
