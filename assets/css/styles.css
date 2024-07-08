@@ -192,12 +192,12 @@
 .main-content__app__user-input__buttons__label {
     height: 50%;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .main-content__app__user-input__buttons__label__copy {
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .main-content__app__user-input__buttons__encrypt-decrypt:hover {
@@ -332,3 +332,104 @@
     height: 8vh;
 }
 
+
+@media (min-width: 1020px) and (max-width: 1365px) {
+    .main-content__logo__img-machine {
+        width: 80%;
+    }
+
+    .main-content__app__user-input__box__txt__area {
+        font-size: 1.2rem;
+    }
+
+    .main-content__app__user-input__box__txt__area__type-here {
+        font-size: 1.2rem;
+    }
+
+    .main-content__app__user-input__box__warning {
+        width: 98%;
+        transform: translate(-1%, 0%);
+    }
+
+    .main-content__app__user-input__box__warning__txt {
+        font-size: 0.9rem;
+    }
+
+    .main-content__app__user-input__buttons__label {
+        font-size: 0.9rem;
+    }
+
+    .main-content__app__user-input__buttons__label__copy {
+        font-size: 0.9rem;
+    }
+
+    .main-content__app__user-output__msg__no-message {
+        margin-left: 2%;
+        font-size: 2rem;
+    }
+
+    .main-content__app__user-output__msg__enter-text {
+        margin-left: 2%;
+        font-size: 1rem;
+    }
+
+    .main-content__app__user-ouput__box__title {
+        margin-top: -145%;
+        font-size: 1.5rem;
+    }
+
+    .main-content__app__user-output__txt__answer {
+        font-size: 1.2rem;
+    }
+
+    .main-content__app__user-output__button {
+        margin-top: 146%;
+    }
+
+    .footer-content {
+        padding: 1.2%;
+        font-size: 1.2rem;
+        font-weight: 550;
+    }
+
+    .footer-content__links {
+        display: flex;
+        justify-content: center;
+        gap: 0.6rem;
+    }
+
+}
+
+@media (min-width: 1366px) and (max-width: 1919px) {
+
+}
+
+@media (min-width: 1920px) {
+
+}
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 799px) {
+
+}
+
+@media (min-width: 800px) {
+
+}
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+}
+
+@media (min-width: 375px) and (max-width: 413px) {
+
+}
+
+@media (min-width: 414px) {
+
+}
