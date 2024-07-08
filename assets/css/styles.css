@@ -401,7 +401,63 @@
 }
 
 @media (min-width: 1366px) and (max-width: 1919px) {
+    .main-content__logo__img-machine {
+        width: 90%;
+    }
 
+    .main-content__app__user-input__box__txt__area {
+        font-size: 1.4rem;
+    }
+
+    .main-content__app__user-input__box__txt__area__type-here {
+        font-size: 1.4rem;
+    }
+
+    .main-content__app__user-input__box__warning {
+        width: 98%;
+        transform: translate(-1%, 0%);
+    }
+
+    .main-content__app__user-input__box__warning__txt {
+        font-size: 1.1rem;
+    }
+
+    .main-content__app__user-input__buttons__label {
+        font-size: 1.2rem;
+    }
+
+    .main-content__app__user-input__buttons__label__copy {
+        font-size: 1.2rem;
+    }
+
+    .main-content__app__user-output__msg__no-message {
+        margin-left: 2%;
+        font-size: 2.3rem;
+    }
+
+    .main-content__app__user-output__msg__enter-text {
+        margin-left: 2%;
+        font-size: 1.2rem;
+    }
+
+    .main-content__app__user-ouput__box__title {
+        margin-top: -135%;
+        font-size: 1.8rem;
+    }
+
+    .main-content__app__user-output__button {
+        margin-top: 134%;
+    }
+
+    .main-content__app__user-output__txt__answer {
+        font-size: 1.4rem;
+    }
+
+    .footer-content {
+        padding: 0.5%;
+        font-size: 1.2rem;
+        font-weight: 550;
+    }
 }
 
 @media (min-width: 1920px) {
