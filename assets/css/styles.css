@@ -6,6 +6,8 @@
     --letters-color: #FEFAF6;
     --main-font: "Source Code Pro", monospace;
     --efect-color: transparent;
+    --hover-color: #7194c9;
+    --insideBox-bg-color: #1d4178;
 }
 
 * {
@@ -94,7 +96,7 @@
 
 .main-content__app__user-input__box {
     display: flex;
-    background-color: #1d4178;
+    background-color: var(--insideBox-bg-color);
     justify-content: center;
     align-items: center;
     border: 2px solid var(--footer-borders-color);
@@ -200,7 +202,7 @@
 }
 
 .main-content__app__user-input__buttons__encrypt-decrypt:hover {
-    background-color: #7194c9;
+    background-color: var(--hover-color);
 }
 
 .body-content__boxes__output__place__img__robot {
@@ -239,7 +241,7 @@
 
 .main-content__app__user-ouput__box {
     display: flex;
-    background-color: #1d4178;
+    background-color: var(--insideBox-bg-color);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -317,7 +319,7 @@
 }
 
 .main-content__app__user-output__button__copy:hover {
-    background-color: #7194c9;
+    background-color: var(--hover-color);
 }
 
 .footer-content {
@@ -329,4 +331,39 @@
     font-weight: 750;
     width: 100%;
     height: 8vh;
+}
+
+@media (min-width:1020px) and (max-width: 1400px){
+    .header-content {
+        height: 6vh;
+    }
+
+    .main-content {
+        position: relative;
+        height: 88vh;
+    }   
+
+    .main-content__app {
+        justify-content: space-evenly;
+        width: 98%;
+        gap:7%;
+    }
+    
+    .main-content__app__user-input {
+        gap:2%;
+    }
+
+    .main-content__app__user-input__box__warning {
+        width: 95%;
+        gap:3%;
+    }
+
+    .main-content__app__user-input__buttons__label {
+        font-size: 1.1rem;
+    }
+
+    .footer-content {
+        padding: 0.3%;
+        height: 6vh;
+    }    
 }
