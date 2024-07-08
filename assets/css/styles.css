@@ -410,3 +410,84 @@
         height: 6vh;
     }  
 }
+
+@media (min-width:800px) and (max-width: 960px){
+    .header-content {
+        height: 6vh;
+    }
+
+    .main-content {
+        position: relative;
+        height: 87vh;
+    }
+    
+    .main-content__logo__img-machine {
+        width: 60%;
+    }
+
+    .main-content__app {
+        justify-content: space-evenly;
+        width: 85%;
+        gap:7%;
+    }
+
+    .main-content__app__user-input__box__txt__area {
+        font-size: 1rem;
+    }
+
+    .main-content__app__user-input__box__txt__area__type-here {
+        left: 3.5%;
+        font-size: 1rem;
+    }
+
+    .main-content__app__user-input__box__warning {
+        width: 98%;
+        gap:2%;
+    }
+
+    .main-content__app__user-input__box__warning__txt {
+        font-size: 0.6rem;
+    }
+
+    .main-content__app__user-input__buttons__label {
+        font-size: 0.7rem;
+    }
+
+    .main-content__app__user-input__buttons__label__copy {
+        font-size: 0.7rem;
+    }
+
+    .main-content__app__user-output__msg__no-message {
+        font-size: 1.3rem;
+    }
+
+    .main-content__app__user-output__msg__enter-text {
+        font-size: 0.9rem;
+    }
+
+    .main-content__app__user-ouput__box__title {
+        margin-top: -140%;
+        font-size: 1.3rem;
+    }
+
+    .main-content__app__user-output__txt__answer {
+        font-size: 0.9rem;
+    }
+
+    .main-content__app__user-output__button {
+        margin-top: 138%;
+    }
+
+    .footer-content {
+        padding: 1.2%;
+        font-size: 0.9rem;
+        height: 8vh;
+    }
+    
+    .footer-content__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+    }
+}
