@@ -491,3 +491,321 @@
         gap: 3px;
     }
 }
+
+@media (min-width:480px) and (max-width: 799px){
+    .body-content {
+        min-height: 100vh;
+        font-family: var(--main-font);
+        color: var(--letters-color);
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header-content {
+        padding: 0.5% 0.5% 0.5% 3%;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 8vh;
+        gap: 0.7%;
+    }
+    
+    .header-content__width {
+        display: flex;
+        width: 60%;
+        height: 110%;
+        gap: 3%;
+    }
+    
+    .header-content__img__alura {
+        height: 80%;
+    }
+    
+    .header-content__img__one {
+        height: 160%;
+        transform: translate(0%, -19%);
+    }
+    
+    .header-content__img {
+        height: 80%;
+    }
+    
+    .main-content {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 84vh;
+    }
+    
+    .main-content__logo {
+        margin-left: 2%;
+        margin-top: -0.3%;
+    
+    }
+    
+    .main-content__logo__img-machine {
+        width: 120%;
+    }
+    
+    .main-content__app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 78%;
+        height: 85%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        gap:10%;
+    }
+    
+    .main-content__app__user-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        gap:2%;
+    }
+    
+    .main-content__app__user-input__box {
+        display: flex;
+        background-color: var(--insideBox-bg-color);
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--footer-borders-color);
+        border-radius: 16px;
+        width: 100%;
+        height: 80%;
+        box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    }
+    
+    .main-content__app__user-input__box__txt {
+        width: 97%;
+        height: 97%;
+    }
+    
+    .main-content__app__user-input__box__txt__area {
+        width: 100%;
+        height: 100%;
+        resize: none;
+        background-color: var(--efect-color);
+        border: var(--efect-color);
+        color: var(--letters-color);
+        font-size: 1.7rem;
+    }
+    
+    .main-content__app__user-input__box__txt__area:focus {
+        outline: none;
+    }
+    
+    .main-content__app__user-input__box__txt__area__type-here {
+        width: 48.5%;
+        position: absolute;
+        left: 3.3%;
+        top: 1.3%;
+        transition: 0.5s;
+        font-size: 1.7rem;
+        color: var(--letters-color);
+    }
+    
+    .main-content__app__user-input__box__txt__area:valid ~ span {
+        transform: translateY(-2.1rem);
+        color: var(--efect-color);
+    }
+    
+    .main-content__app__user-input__box__warning {
+        display: flex;
+        align-items: center;
+        left: 0;
+        width: 90%;
+        height: 6%;
+        transform: translate(-5.5%, 0%);
+        gap:3%;
+    }
+    
+    .main-content__app__user-input__box__warning__img {
+        height: 100%;
+    }
+    
+    .main-content__app__user-input__box__warning__txt {
+        color: var(--letters-color);
+        font-family: var(--main-font);
+        font-size: 1.4rem;
+    }
+    
+    .main-content__app__user-input__buttons {
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+        height: 9%;
+    }
+    
+    .main-content__app__user-input__buttons__encrypt-decrypt {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        align-items: center;
+        border-color: var(--efect-color);
+        border-radius: 16px;
+        align-items: center;
+        font-family: var(--main-font);
+        cursor: pointer;
+        transition: ease-in-out;
+        background-color: var(--letters-color);
+        box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    }
+    
+    .main-content__app__user-input__buttons__box-imgs {
+        height: 70%;
+    }
+    
+    .main-content__app__user-input__buttons__box-imgs__images {
+        height: 100%;
+    }
+    
+    .main-content__app__user-input__buttons__label {
+        height: 50%;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
+    .main-content__app__user-input__buttons__label__copy {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
+    .main-content__app__user-input__buttons__encrypt-decrypt:hover {
+        background-color: var(--hover-color);
+    }
+    
+    .body-content__boxes__output__place__img__robot {
+        width: 80%;
+        margin-left: 15%;
+        position:relative;
+    }
+    
+    .main-content__app__user-output__msg {
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+    }
+    
+    .main-content__app__user-output__msg__no-message {
+        margin-left: 4%;
+        margin-top: -5%;
+        font-family: var(--main-font);
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    
+    .main-content__app__user-output__msg__enter-text {
+        margin-left: 4%;
+        font-family: var(--main-font);
+        font-size: 1.6rem;
+    }
+    
+    .main-content__app__user-output {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 100%;
+    }
+    
+    .main-content__app__user-ouput__box {
+        display: flex;
+        background-color: var(--insideBox-bg-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--footer-borders-color);
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+        gap: 3.2%;
+        box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    }
+    
+    .main-content__app__user-ouput__box__title {
+        position:absolute;
+        margin-top: -130%;
+        width: 95%;
+        height: 10%;
+        font-size: 2.5rem;
+        font-weight: 500;
+        font-family: var(--main-font);
+    }
+    
+    .main-content__app__user-output {
+        position: relative;
+    }
+    
+    .main-content__app__user-output__txt {
+        position: absolute;
+        width: 95%;
+        height: 74%;
+        transform: translate(0%,1.7%);
+    }
+    
+    .main-content__app__user-output__txt__answer {
+        width: 100%;
+        height: 100%;
+        resize: none;
+        background-color: var(--efect-color);
+        border: var(--efect-color);
+        outline: none;
+        color: var(--letters-color);
+        font-size: 1.7rem;
+    }
+    
+    .main-content__app__user-output__button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: 131%;
+        width: 97%;
+        height: 9%;
+    }
+    
+    .main-content__app__user-output__button__copy {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        align-items: center;
+        border-color: var(--efect-color);
+        border-radius: 16px;
+        align-items: center;
+        font-family: var(--main-font);
+        cursor: pointer;
+        transition: ease-in-out;
+        background-color: var(--letters-color);
+        box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    }
+    
+    .main-content__app__user-output__button__box-img {
+        height: 100%;
+    }
+    
+    .main-content__app__user-output__button__box-img__image {
+        height: 70%;
+        margin-top: 15%;
+    }
+    
+    .main-content__app__user-output__button__copy:hover {
+        background-color: var(--hover-color);
+    }
+    
+    .footer-content {
+        padding: 0.8%;
+        background-color: var(--footer-borders-color);
+        color: var(--main-color);
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 750;
+        width: 100%;
+        height: 8vh;
+    }
+}
