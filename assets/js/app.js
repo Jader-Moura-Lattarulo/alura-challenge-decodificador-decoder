@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     //Função para verificar se a entrada está vazia
-    function isEmpty (){
+    function isEmpty(){
         if (!userText.value || userText.value.trim() === "") {
             enterText.value = "É preciso ter algum texto para a máquina funcionar.";
             enterText.innerHTML = enterText.value;
@@ -61,25 +61,32 @@ document.addEventListener("DOMContentLoaded", function() {
         return false;
     }
 
+    function isNeeded(moreThan){
+        return `É preciso ter algo além de ${moreThan} para a máquina funcionar.`;
+    }
+
     //Função para verificar se a entrada está só com caracteres especiais ou números
     function isSpecialCharactersOrNumbers() {
         const text = userText.value;
         const specialCharacters = /^[^\w\s]+$/;
         const onlyNumbers = /^\d+$/;
         const isSpecialCharAndNumbers = /^[\d\W]+$/;
-
+        
         if (specialCharacters.test(text)) {
-            enterText.value = "É preciso ter algo além de caracteres especiais para a máquina funcionar.";
+            let moreThan = "caracteres especiais"
+            enterText.value = isNeeded(moreThan);
             enterText.innerHTML = enterText.value;
             clearTextArea();
             return true;
         } else if (onlyNumbers.test(text)) {
-            enterText.value = "É preciso ter algo além de números para a máquina funcionar."
+            let moreThan = "números"
+            enterText.value = isNeeded(moreThan);
             enterText.innerHTML = enterText.value;
             clearTextArea();
             return true;
         } else if (isSpecialCharAndNumbers.test(text)) {
-            enterText.value = "É preciso ter algo além de números e caracteres especiais para a máquina funcionar."
+            let moreThan = "números e caracteres especiais"
+            enterText.value = isNeeded(moreThan);
             enterText.innerHTML = enterText.value;
             clearTextArea();
             return true;
