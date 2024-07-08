@@ -130,37 +130,34 @@ document.addEventListener("DOMContentLoaded", function() {
         hideCopyButton();
     })
 
+    // Função para os botões
+    function buttons(operation) {
+        if (isEmpty()) {
+            return;
+        }
+        if (isSpecialCharactersOrNumbers()) {
+            return;
+        }
+        toLowerCase();
+        removeAccents();
+        if(operation === "encrypt") {
+            encrypt();
+        } else if (operation === "decrypt") {
+            decrypt();
+        }
+        clearTextArea();
+        showCopyButton();
+    }
+
     // Adicionar eventos aos botões de criptografar e descriptografar
     const encryptButton = document.getElementById("encrypt");
     const decryptButton = document.getElementById("decrypt");
 
     encryptButton.addEventListener("click", function() {
-        //lógica de criptografia
-        if (isEmpty()) {
-            return;
-        }
-        if (isSpecialCharactersOrNumbers()) {
-            return;
-        }
-        toLowerCase();
-        removeAccents();
-        encrypt();
-        clearTextArea();
-        showCopyButton();
+        buttons("encrypt");
     });
 
     decryptButton.addEventListener("click", function() {
-        //lógica de descriptografia
-        if (isEmpty()) {
-            return;
-        }
-        if (isSpecialCharactersOrNumbers()) {
-            return;
-        }
-        toLowerCase();
-        removeAccents();
-        decrypt();
-        clearTextArea();
-        showCopyButton();
+        buttons("decrypt");
     });
 });
