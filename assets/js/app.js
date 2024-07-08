@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const copyButton = document.getElementById("copy");
-    const robotImage = document.getElementById("robot");
-    const foundCopied = document.getElementById("no_found_msg_copied");
-    const useAsYouWant = document.getElementById("enter_txt");
-    const userText = document.getElementById("get_txt_to_encrypt");
-    const txtEncrypted = document.getElementById("txtEncrypted");
-    const hereEncrypted = document.getElementById("hereIsEncryptedText");
-    const txtWillBeCopied = document.getElementById("txtEncrypted");
-    const enterText = document.getElementById("type-here");
+    let copyButton = document.getElementById("copy");
+    let robotImage = document.getElementById("robot");
+    let foundCopied = document.getElementById("no_found_msg_copied");
+    let useAsYouWant = document.getElementById("enter_txt");
+    let userText = document.getElementById("get_txt_to_encrypt");
+    let txtEncrypted = document.getElementById("txtEncrypted");
+    let hereEncrypted = document.getElementById("hereIsEncryptedText");
+    let txtWillBeCopied = document.getElementById("txtEncrypted");
+    let enterText = document.getElementById("type-here");
 
     copyButton.style.display = "none"; // Garante que o botão esteja invisível ao carregar a página
     txtEncrypted.style.display = "none";
