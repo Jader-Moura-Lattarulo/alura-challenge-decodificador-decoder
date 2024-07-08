@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+:root {
+    --main-color: #102C57;
+    --footer-borders-color: #FFC26F;
+    --letters-color: #FEFAF6;
+    --main-font: "Source Code Pro", monospace;
+    --efect-color: transparent;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +16,9 @@
 
 .body-content {
     min-height: 100vh;
-    font-family: "Source Code Pro", monospace;
-    color: #FEFAF6;
-    background-color: #102C57;
+    font-family: var(--main-font);
+    color: var(--letters-color);
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
 }
@@ -89,7 +97,7 @@
     background-color: #1d4178;
     justify-content: center;
     align-items: center;
-    border: 2px solid #FFC26F;
+    border: 2px solid var(--footer-borders-color);
     border-radius: 16px;
     width: 100%;
     height: 80%;
@@ -105,9 +113,9 @@
     width: 100%;
     height: 100%;
     resize: none;
-    background-color: transparent;
-    border: transparent;
-    color: #FEFAF6;
+    background-color: var(--efect-color);
+    border: var(--efect-color);
+    color: var(--letters-color);
     font-size: 1.3rem;
 }
 
@@ -122,12 +130,12 @@
     top: 1.3%;
     transition: 0.5s;
     font-size: 1.3rem;
-    color: #FEFAF6;
+    color: var(--letters-color);
 }
 
 .main-content__app__user-input__box__txt__area:valid ~ span {
     transform: translateY(-2.1rem);
-    color: transparent;
+    color: var(--efect-color);
 }
 
 .main-content__app__user-input__box__warning {
@@ -145,8 +153,8 @@
 }
 
 .main-content__app__user-input__box__warning__txt {
-    color: #FEFAF6;
-    font-family: "Source Code Pro", monospace;
+    color: var(--letters-color);
+    font-family: var(--main-font);
     font-size: 1.1rem;
 }
 
@@ -162,13 +170,13 @@
     justify-content: space-around;
     width: 40%;
     align-items: center;
-    border-color: transparent;
+    border-color: var(--efect-color);
     border-radius: 16px;
     align-items: center;
-    font-family: "Source Code Pro", monospace;
+    font-family: var(--main-font);
     cursor: pointer;
     transition: ease-in-out;
-    background-color: #FEFAF6;
+    background-color: var(--letters-color);
     box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 
@@ -210,14 +218,14 @@
 .main-content__app__user-output__msg__no-message {
     margin-left: 5%;
     margin-top: -5%;
-    font-family: "Source Code Pro", monospace;
+    font-family: var(--main-font);
     font-size: 1.43rem;
     font-weight: 500;
 }
 
 .main-content__app__user-output__msg__enter-text {
     margin-left: 5%;
-    font-family: "Source Code Pro", monospace;
+    font-family: var(--main-font);
     font-size: 1.1rem;
 }
 
@@ -235,7 +243,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid #FFC26F;
+    border: 2px solid var(--footer-borders-color);
     border-radius: 16px;
     width: 100%;
     height: 100%;
@@ -250,7 +258,7 @@
     height: 10%;
     font-size: 1.8rem;
     font-weight: 500;
-    font-family: "Source Code Pro", monospace;
+    font-family: var(--main-font);
 }
 
 .main-content__app__user-output {
@@ -268,10 +276,10 @@
     width: 100%;
     height: 100%;
     resize: none;
-    background-color: transparent;
-    border: transparent;
+    background-color: var(--efect-color);
+    border: var(--efect-color);
     outline: none;
-    color: #FEFAF6;
+    color: var(--letters-color);
     font-size: 1.3rem;
 }
 
@@ -289,13 +297,13 @@
     justify-content: space-around;
     width: 40%;
     align-items: center;
-    border-color: transparent;
+    border-color: var(--efect-color);
     border-radius: 16px;
     align-items: center;
-    font-family: "Source Code Pro", monospace;
+    font-family: var(--main-font);
     cursor: pointer;
     transition: ease-in-out;
-    background-color: #FEFAF6;
+    background-color: var(--letters-color);
     box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 
@@ -314,11 +322,11 @@
 
 .footer-content {
     padding: 0.8%;
-    background-color: #FFC26F;
-    color: #102C57;
+    background-color: var(--footer-borders-color);
+    color: var(--main-color);
     text-align: center;
     font-size: 1rem;
-    font-weight: 550;
+    font-weight: 750;
     width: 100%;
     height: 8vh;
 }
