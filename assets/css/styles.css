@@ -186,12 +186,10 @@
 }
 
 .main-content__app__user-input__buttons__box-imgs__images {
-    background-color: yellow;
     height: 100%;
 }
 
 .main-content__app__user-input__buttons__label {
-    background-color: blue;
     height: 50%;
     font-size: 1.6rem;
     font-weight: 500;
@@ -495,136 +493,5 @@
 }
 
 @media (min-width:480px) and (max-width: 799px){
-    .header-content {
-        height: 6vh;
-    }
     
-    .header-content__width {
-        margin-left: 3%;
-        gap: 3%;
-    }
-
-    .header-content__img__alura {
-        height: 60%;
-        transform: translate(0%, 10%);
-    }
-    
-    .header-content__img__one {
-        height: 120%;
-        transform: translate(0%, -14%);
-    }
-    
-    .header-content__img {
-        height: 80%;
-    }
-
-    .main-content {
-        height: 86vh;
-    }
-    
-    .main-content__logo__img-machine {
-        width: 90%;
-    }
-
-    .main-content__app {
-        background-color: pink;
-        display: flex;
-        flex-direction: column;
-        height: 65%;
-        transform: translate(-50%, -45%);
-    }
-
-    .main-content__app__user-input {
-        background-color: black;
-        width: 100%;
-        height: 85%;
-        margin-top: 5%;
-    }
-
-    .main-content__app__user-input__box {
-        width: 100%;
-        height: 80%;
-    }
-
-    .main-content__app__user-input__box__txt__area {
-        font-size: 1rem;
-        
-    }
-
-    .main-content__app__user-input__box__txt__area__type-here {
-        left: 3.5%;
-        font-size: 1rem;
-    }
-
-    .main-content__app__user-input__box__warning {
-        width: 98%;
-        gap:2%;
-    }
-
-    .main-content__app__user-input__box__warning__txt {
-        font-size: 0.6rem;
-    }
-
-    .main-content__app__user-input__buttons__label {
-        font-size: 0.7rem;
-    }
-
-    .main-content__app__user-input__buttons__label__copy {
-        font-size: 0.7rem;
-    }
-
-    .main-content__app__user-output__msg__no-message {
-        font-size: 1.3rem;
-    }
-
-    .main-content__app__user-output__msg__enter-text {
-        font-size: 0.9rem;
-    }
-
-    .main-content__app__user-output {
-        background-color: yellow;
-        width: 100%;
-        height: 100%;
-    }
-
-    .main-content__app__user-ouput__box {
-        flex-direction: column;
-        background-color: red;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        gap: 0.2%;
-    }
-
-    .body-content__boxes__output__place__img__robot {
-        width: 30%;
-        margin-left: 30%;
-        position:relative;
-    }
-
-    .main-content__app__user-ouput__box__title {
-        margin-top: -140%;
-        font-size: 1.3rem;
-    }
-
-    .main-content__app__user-output__txt__answer {
-        font-size: 0.9rem;
-    }
-
-    .main-content__app__user-output__button {
-        margin-top: 138%;
-    }
-
-    .footer-content {
-        padding: 1.2%;
-        font-size: 0.9rem;
-        height: 8vh;
-    }
-    
-    .footer-content__links {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3px;
-    }
 }
