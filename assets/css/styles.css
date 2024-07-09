@@ -257,6 +257,13 @@
     box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 
+.main-content__app__user-ouput__box__container {
+    background-color: red;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
 .main-content__app__user-ouput__box__title {
     position:absolute;
     margin-top: -122%;
@@ -290,22 +297,24 @@
 }
 
 .main-content__app__user-output__button {
-    position: absolute;
+    background-color: blue;
+    position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 119%;
-    width: 97%;
-    height: 9%;
+    flex-direction: column;
+    width: 100%;
+    height: 6.5%;
+    transform: translate(-335%,1262%);
 }
 
 .main-content__app__user-output__button__copy {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 130%;
+    height: 100%;
     align-items: center;
     border-color: var(--efect-color);
     border-radius: 16px;
-    align-items: center;
     font-family: var(--main-font);
     cursor: pointer;
     transition: ease-in-out;
@@ -336,278 +345,3 @@
     width: 100%;
     height: 8vh;
 }
-
-
-/*@media (min-width: 1020px) and (max-width: 1365px) {
-    .main-content__logo__img-machine {
-        width: 80%;
-    }
-
-    .main-content__app__user-input__box__txt__area {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-input__box__txt__area__type-here {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-input__box__warning {
-        width: 98%;
-        transform: translate(-1%, 0%);
-    }
-
-    .main-content__app__user-input__box__warning__txt {
-        font-size: 0.9rem;
-    }
-
-    .main-content__app__user-input__buttons__label {
-        font-size: 0.9rem;
-    }
-
-    .main-content__app__user-input__buttons__label__copy {
-        font-size: 0.9rem;
-    }
-
-    .main-content__app__user-output__msg__no-message {
-        margin-left: 2%;
-        font-size: 2rem;
-    }
-
-    .main-content__app__user-output__msg__enter-text {
-        margin-left: 2%;
-        font-size: 1rem;
-    }
-
-    .main-content__app__user-ouput__box__title {
-        margin-top: -145%;
-        font-size: 1.5rem;
-    }
-
-    .main-content__app__user-output__txt__answer {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-output__button {
-        margin-top: 146%;
-    }
-
-    .footer-content {
-        padding: 1.2%;
-        font-size: 1.2rem;
-        font-weight: 550;
-    }
-
-    .footer-content__links {
-        display: flex;
-        justify-content: center;
-        gap: 0.6rem;
-    }
-
-}
-
-@media (min-width: 1366px) and (max-width: 1683px) {
-    .main-content__logo__img-machine {
-        width: 90%;
-    }
-
-    .main-content__app__user-input__box__txt__area {
-        font-size: 1.4rem;
-    }
-
-    .main-content__app__user-input__box__txt__area__type-here {
-        font-size: 1.4rem;
-    }
-
-    .main-content__app__user-input__box__warning {
-        width: 98%;
-        transform: translate(-1%, 0%);
-    }
-
-    .main-content__app__user-input__box__warning__txt {
-        font-size: 1.1rem;
-    }
-
-    .main-content__app__user-input__buttons__label {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-input__buttons__label__copy {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-output__msg__no-message {
-        margin-left: 2%;
-        font-size: 2.3rem;
-    }
-
-    .main-content__app__user-output__msg__enter-text {
-        margin-left: 2%;
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-ouput__box__title {
-        margin-top: -135%;
-        font-size: 1.8rem;
-    }
-
-    .main-content__app__user-output__button {
-        margin-top: 134%;
-    }
-
-    .main-content__app__user-output__txt__answer {
-        font-size: 1.4rem;
-    }
-
-    .footer-content {
-        padding: 0.5%;
-        font-size: 1.2rem;
-        font-weight: 550;
-    }
-}
-
-@media (min-width: 1684) and (max-width: 2000){
-    .main-content__logo__img-machine {
-        width: 90%;
-    }
-
-    .main-content__app__user-input__box__txt__area {
-        font-size: 1.4rem;
-    }
-
-    .main-content__app__user-input__box__txt__area__type-here {
-        font-size: 1.4rem;
-    }
-
-    .main-content__app__user-input__box__warning {
-        width: 98%;
-        transform: translate(-1%, 0%);
-    }
-
-    .main-content__app__user-input__box__warning__txt {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-input__buttons__label {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-input__buttons__label__copy {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-output__msg__no-message {
-        margin-left: 2%;
-        font-size: 2.3rem;
-    }
-
-    .main-content__app__user-output__msg__enter-text {
-        margin-left: 2%;
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-ouput__box__title {
-        margin-top: -100%;
-        font-size: 1.8rem;
-    }
-
-    .main-content__app__user-output__button {
-        margin-top: 10%;
-    }
-
-    .main-content__app__user-output__txt__answer {
-        font-size: 1.4rem;
-    }
-
-    .footer-content {
-        padding: 0.5%;
-        font-size: 1.2rem;
-        font-weight: 550;
-    }
-}
-
-@media (min-width: 2001) and (max-width: 3900){
-    .main-content__logo__img-machine {
-        width: 90%;
-    }
-
-    .main-content__app__user-input__box__txt__area {
-        font-size: 1.4rem;
-    }
-
-    .main-content__app__user-input__box__txt__area__type-here {
-        font-size: 1.4rem;
-    }
-
-    .main-content__app__user-input__box__warning {
-        width: 98%;
-        transform: translate(-1%, 0%);
-    }
-
-    .main-content__app__user-input__box__warning__txt {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-input__buttons__label {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-input__buttons__label__copy {
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-output__msg__no-message {
-        margin-left: 2%;
-        font-size: 2.3rem;
-    }
-
-    .main-content__app__user-output__msg__enter-text {
-        margin-left: 2%;
-        font-size: 1.2rem;
-    }
-
-    .main-content__app__user-ouput__box__title {
-        margin-top: -100%;
-        font-size: 1.8rem;
-    }
-
-    .main-content__app__user-output__button {
-        margin-top: 10%;
-    }
-
-    .main-content__app__user-output__txt__answer {
-        font-size: 1.4rem;
-    }
-
-    .footer-content {
-        padding: 0.5%;
-        font-size: 1.2rem;
-        font-weight: 550;
-    }
-}
-
-
-@media (min-width: 600px) and (max-width: 767px) {
-
-}
-
-@media (min-width: 768px) and (max-width: 799px) {
-
-}
-
-@media (min-width: 800px) {
-
-}
-
-
-@media (min-width: 320px) and (max-width: 374px) {
-
-}
-
-@media (min-width: 375px) and (max-width: 413px) {
-
-}
-
-@media (min-width: 414px) {
-
-}
-*/
