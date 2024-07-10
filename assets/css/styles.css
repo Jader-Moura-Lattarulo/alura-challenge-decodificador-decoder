@@ -21,7 +21,7 @@
     box-sizing: border-box;
 }
 
-.body-content {
+.body-content { /*OK*/
     min-height: 100vh;
     font-family: var(--main-font);
     color: var(--letters-color);
@@ -30,7 +30,7 @@
     flex-direction: column;
 }
 
-.header-content {
+.header-content { /*OK*/
     padding: 0.5% 0.5% 0.5% 3%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.3);
@@ -39,44 +39,44 @@
     gap: 0.7%;
 }
 
-.header-content__width {
+.header-content__width { /*OK*/
     display: flex;
     width: 60%;
     height: 110%;
     gap: 3%;
 }
 
-.header-content__img__alura {
+.header-content__img__alura { /*OK*/
     height: 80%;
 }
 
-.header-content__img__one {
+.header-content__img__one { /*OK*/
     height: 160%;
     transform: translate(0%, -19%);
 }
 
-.header-content__img {
+.header-content__img { /*OK*/
     height: 80%;
 }
 
-.main-content {
+.main-content { /*OK*/
     display: flex;
     position: relative;
     width: 100%;
     height: 84vh;
 }
 
-.main-content__logo {
+.main-content__logo { /*OK*/
     margin-left: 2%;
     margin-top: -0.3%;
 
 }
 
-.main-content__logo__img-machine {
+.main-content__logo__img-machine { /*OK*/
     width: 140%;
 }
 
-.main-content__app {
+.main-content__app { /*OK*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +89,7 @@
     gap:10%;
 }
 
-.main-content__app__user-input {
+.main-content__app__user-input { /*OK*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +98,7 @@
     gap:2%;
 }
 
-.main-content__app__user-input__box {
+.main-content__app__user-input__box { /*OK*/
     display: flex;
     background-color: var(--insideBox-bg-color);
     justify-content: center;
@@ -110,12 +110,12 @@
     box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 
-.main-content__app__user-input__box__txt {
+.main-content__app__user-input__box__txt { /*OK*/
     width: 97%;
     height: 97%;
 }
 
-.main-content__app__user-input__box__txt__area {
+.main-content__app__user-input__box__txt__area { /*OK*/
     width: 100%;
     height: 100%;
     resize: none;
@@ -125,11 +125,11 @@
     font-size: var(--font-size-boxes);
 }
 
-.main-content__app__user-input__box__txt__area:focus {
+.main-content__app__user-input__box__txt__area:focus { /*OK*/
     outline: none;
 }
 
-.main-content__app__user-input__box__txt__area__type-here {
+.main-content__app__user-input__box__txt__area__type-here { /*OK*/
     width: 48.5%;
     position: absolute;
     left: 3.3%;
@@ -139,12 +139,12 @@
     color: var(--letters-color);
 }
 
-.main-content__app__user-input__box__txt__area:valid ~ span {
+.main-content__app__user-input__box__txt__area:valid ~ span { /*OK*/
     transform: translateY(-2.1rem);
     color: var(--efect-color);
 }
 
-.main-content__app__user-input__box__warning {
+.main-content__app__user-input__box__warning { /*OK*/
     display: flex;
     align-items: center;
     left: 0;
@@ -154,24 +154,24 @@
     gap:3%;
 }
 
-.main-content__app__user-input__box__warning__img {
+.main-content__app__user-input__box__warning__img { /*OK*/
     height: 100%;
 }
 
-.main-content__app__user-input__box__warning__txt {
+.main-content__app__user-input__box__warning__txt { /*OK*/
     color: var(--letters-color);
     font-family: var(--main-font);
     font-size: 1.4rem;
 }
 
-.main-content__app__user-input__buttons {
+.main-content__app__user-input__buttons { /*OK*/
     display: flex;
     justify-content:space-between;
     width: 100%;
     height: 9%;
 }
 
-.main-content__app__user-input__buttons__encrypt-decrypt {
+.main-content__app__user-input__buttons__encrypt-decrypt { /*OK*/
     display: flex;
     justify-content: space-around;
     width: 40%;
@@ -186,42 +186,42 @@
     box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 
-.main-content__app__user-input__buttons__box-imgs {
+.main-content__app__user-input__buttons__box-imgs { /*OK*/
     height: 70%;
 }
 
-.main-content__app__user-input__buttons__box-imgs__images {
+.main-content__app__user-input__buttons__box-imgs__images { /*OK*/
     height: 100%;
 }
 
-.main-content__app__user-input__buttons__label {
+.main-content__app__user-input__buttons__label { /*OK*/
     height: 50%;
     font-size: var(--font-size-label);
     font-weight: var(--font-weigth-label);
 }
 
-.main-content__app__user-input__buttons__label__copy {
+.main-content__app__user-input__buttons__label__copy { /*Ainda não posta*/
     font-size: var(--font-size-label);
     font-weight: var(--font-weigth-label);
 }
 
-.main-content__app__user-input__buttons__encrypt-decrypt:hover {
+.main-content__app__user-input__buttons__encrypt-decrypt:hover { /*Ainda não posta*/
     background-color: var(--hover-color);
 }
 
-.body-content__boxes__output__place__img__robot {
+.body-content__boxes__output__place__img__robot { /*Mexer ainda*/
     width: 80%;
     margin-left: 15%;
     position:relative;
 }
 
-.main-content__app__user-output__msg {
+.main-content__app__user-output__msg { 
     display: flex;
     flex-direction: column;
     gap:8px;
 }
 
-.main-content__app__user-output__msg__no-message {
+.main-content__app__user-output__msg__no-message { /*Mexer ainda*/
     margin-left: 4%;
     margin-top: -5%;
     font-family: var(--main-font);
@@ -229,7 +229,7 @@
     font-weight: 500;
 }
 
-.main-content__app__user-output__msg__enter-text {
+.main-content__app__user-output__msg__enter-text { /*Mexer ainda*/
     margin-left: 4%;
     font-family: var(--main-font);
     font-size: var(--font-size-boxes);
@@ -258,7 +258,6 @@
 }
 
 .main-content__app__user-ouput__box__container {
-    background-color: red;
     display: flex;
     width: 100%;
     height: 100%;
@@ -289,15 +288,10 @@
     width: 100%;
     height: 100%;
     resize: none;
-    background-color: var(--efect-color);
-    border: var(--efect-color);
-    outline: none;
-    color: var(--letters-color);
-    font-size: var(--font-size-boxes);
+    
 }
 
 .main-content__app__user-output__button {
-    background-color: blue;
     position: relative;
     display: flex;
     justify-content: center;

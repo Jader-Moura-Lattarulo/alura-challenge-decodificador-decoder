@@ -1,206 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
     <title>Enigma Machine</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body class="body-content">
-    <header class="header-content">
-      <div class="header-content__width">
+    <header class="header-container">
+      <section class="header-container__badges">
         <img
-          class="header-content__img__alura"
+          class="header-container__badges__img__alura"
           src="./assets/images/logo-alura.svg"
           alt="logo alura"
         />
         <img
-          class="header-content__img__one"
+          class="header-container__badges__img__one"
           src="./assets/images/one_logo.svg"
           alt="logo one"
         />
         <img
-          class="header-content__img"
+          class="header-container__badges__img"
           src="./assets/images/logica-programacao-mergulhe-programacao-javascript.svg"
           alt="Badge de conclusão de curso da Alura lógica de programação - JavaScript"
         />
         <img
-          class="header-content__img"
+          class="header-container__badges__img"
           src="./assets/images/logica-programacao-funcoes-listas.svg"
           alt="Badge de conclusão de curso da Alura lógica de programação - funções e listas"
         />
         <img
-          class="header-content__img"
+          class="header-container__badges__img"
           src="./assets/images/html-css-ambiente-arquivos-tags.svg"
           alt="Badge de conclusão de curso da Alura lógica de programação - HTML e CSS"
         />
         <img
-          class="header-content__img"
+          class="header-container__badges__img"
           src="./assets/images/git-github-compartilhando-colaborando-projetos.svg"
           alt="Badge de conclusão de curso da Alura lógica de programação - Git e GitHub"
         />
         <img
-          class="header-content__img"
+          class="header-container__badges__img"
           src="./assets/images/chatgpt-otimizando-qualidade-resultados.svg"
           alt="Badge de conclusão de curso da Alura lógica de programação - Chat GPT"
         />
         <img
-          class="header-content__img"
+          class="header-container__badges__img"
           src="./assets/images/challenge-decodificador-texto.svg"
           alt="Badge de conclusão de curso da Alura lógica de programação - Desafio do decodificador"
         />
-      </div>
+      </section>
+      <section class="header-container__logo">
+        <img
+          class="header-container__logo__img-machine"
+          src="./assets/images/enigma-machine-logo.png"
+          alt="logo enigma machine"
+        />
+      </section>
     </header>
-    <main class="main-content">
-      <div class="main-content__logo">
-        <span class="main-content__logo__img"
-          ><img
-            class="main-content__logo__img-machine"
-            src="./assets/images/enigma-machine-logo.png"
-            alt="logo enigma machine"
-        /></span>
+    <section class="app-container">
+      <div class="app-container__input">
+        <section class="app-container__input__user-input">
+          <textarea
+            autocomplete="off"
+            required
+            type="text"
+            id="get_txt_to_encrypt"
+            class="app-container__input__user-input__area"
+          ></textarea>
+          <span
+            class="app-container__input__user-input__area__type-here"
+            id="type-here"
+            >Digite aqui...</span
+          >
+        </section>
+        <section class="app-container__input__warning">
+          <img
+            class="app-container__input__warning__img"
+            alt="símbolo de alerta"
+            src="./assets/images/warning.svg"
+          />
+          <p class="app-container__input__warning__txt">
+            As letras maiúsculas se tornarão minúsculas e os acentos serão
+            removidos.
+          </p>
+        </section>
+        <section class="app-container__input__buttons">
+          <button
+            onclick=""
+            class="app-container__input__buttons__encrypt-decrypt"
+            id="encrypt"
+          >
+            <span class="app-container__input__buttons__box-imgs"
+              ><img
+                class="app-container__input__buttons__box-imgs__images"
+                alt="cadeado"
+                src="./assets/images/cadeado-criptografia.svg"
+            /></span>
+            <span class="app-container__input__buttons__label"
+              >Criptografar</span
+            >
+          </button>
+          <button
+            onclick=""
+            class="app-container__input__buttons__encrypt-decrypt"
+            id="decrypt"
+          >
+            <span class="app-container__input__buttons__box-imgs"
+              ><img
+                class="app-container__input__buttons__box-imgs__images"
+                alt="chave"
+                src="./assets/images/chave-criptografia.svg" /></span
+            ><span
+              class="app-container__input__buttons__label"
+              id="decrypt-style"
+              >Descriptografar</span
+            >
+          </button>
+        </section>
       </div>
-      <section class="main-content__app">
-        <section class="main-content__app__user-input">
-          <div class="main-content__app__user-input__box">
-            <section class="main-content__app__user-input__box__txt">
-              <textarea
-                autocomplete="off"
-                required
-                type="text"
-                id="get_txt_to_encrypt"
-                class="main-content__app__user-input__box__txt__area"
-              ></textarea>
-
-              <span
-                class="main-content__app__user-input__box__txt__area__type-here"
-                id="type-here"
-                >Digite aqui...</span
-              >
-            </section>
-          </div>
-          <span class="main-content__app__user-input__box__warning">
+      <div class="app-container__output">
+        <section class="app-container__output__non-interactive">
+          <div class="app-container__output__non-interactive__img">
             <img
-              class="main-content__app__user-input__box__warning__img"
-              alt="símbolo de alerta"
-              src="./assets/images/warning.svg"
+              class="app-container__output__non-interactive__img__robot"
+              id="robot"
+              src="./assets/images/robozinho.svg"
+              alt="Robôzinho"
             />
-            <p class="main-content__app__user-input__box__warning__txt">
-              As letras maiúsculas se tornarão minúsculas e os acentos serão
-              removidos.
-            </p>
-          </span>
-          <section class="main-content__app__user-input__buttons">
+          </div>
+          <div class="app-container__output__non-interactive__title-msg">
+            <span
+              class="app-container__output__non-interactive__title-msg__no-message"
+              id="no_found_msg_copied"
+              >Nenhuma mensagem encontrada.</span
+            >
+          </div>
+          <div class="app-container__output__non-interactive__body-msg">
+            <span
+              class="main-content__app__user-output__msg__enter-text"
+              id="enter_txt"
+            >
+              Digite um texto que você deseja criptografar ou
+              descriptografar.</span
+            >
+          </div>
+        </section>
+        <section class="app-container__output__interactive">
+          <section class="app-container__output__interactive__title-place">
+            <span
+              class="app-container__output__interactive__title-place__msg"
+              id="outputTitle"
+              >Aqui está o texto criptografado:</span
+            >
+          </section>
+          <section class="app-container__output__interactive__body-msg">
+            <textarea
+              readonly
+              class="app-container__output__interactive__answer"
+              id="txtEncryptedDecrypted"
+            ></textarea>
+          </section>
+          <section class="app-container__output__button">
             <button
               onclick=""
-              class="main-content__app__user-input__buttons__encrypt-decrypt"
-              id="encrypt"
+              class="app-container__output__button__copy"
+              id="copy"
             >
-              <span class="main-content__app__user-input__buttons__box-imgs"
+              <span class="app-container__output__button__box-img"
                 ><img
-                  class="main-content__app__user-input__buttons__box-imgs__images"
-                  alt="cadeado"
-                  src="./assets/images/cadeado-criptografia.svg"
+                  class="app-container__output__button__box-img__image"
+                  alt="copia"
+                  src="./assets/images/copiar.svg"
               /></span>
-              <span class="main-content__app__user-input__buttons__label"
-                >Criptografar</span
-              >
-            </button>
-            <button
-              onclick=""
-              class="main-content__app__user-input__buttons__encrypt-decrypt"
-              id="decrypt"
-            >
-              <span class="main-content__app__user-input__buttons__box-imgs"
-                ><img
-                  class="main-content__app__user-input__buttons__box-imgs__images"
-                  alt="chave"
-                  src="./assets/images/chave-criptografia.svg" /></span
-              ><span
-                class="main-content__app__user-input__buttons__label"
-                id="decrypt-style"
-                >Descriptografar</span
+              <span
+                class="app-container__output__button__label__copy"
+                id="copy-style"
+                >Copiar</span
               >
             </button>
           </section>
         </section>
-        <section class="main-content__app__user-output">
-          <div class="main-content__app__user-ouput__box">
-            <section class="main-content__app__user-ouput__box__">
-              <spam
-                class="main-content__app__user-ouput__box__title"
-                id="hereIsEncryptedText"
-              >
-              </spam>
-              <section class="main-content__app__user-output__txt">
-                <textarea
-                  readonly
-                  class="main-content__app__user-output__txt__answer"
-                  id="txtEncrypted"
-                ></textarea>
-              </section>
-              <section class="main-content__app__user-output__img">
-                <img
-                  class="body-content__boxes__output__place__img__robot"
-                  id="robot"
-                  src="./assets/images/robozinho.svg"
-                  alt="Robôzinho"
-                />
-              </section>
-              <section class="main-content__app__user-output__msg">
-                <span
-                  class="main-content__app__user-output__msg__no-message"
-                  id="no_found_msg_copied"
-                  >Nenhuma mensagem encontrada.</span
-                >
-                <span
-                  class="main-content__app__user-output__msg__enter-text"
-                  id="enter_txt"
-                >
-                  Digite um texto que você deseja criptografar ou
-                  descriptografar.</span
-                >
-              </section>
-              <section class="main-content__app__user-output__button">
-                <button
-                  onclick=""
-                  class="main-content__app__user-output__button__copy"
-                  id="copy"
-                >
-                  <span class="main-content__app__user-output__button__box-img"
-                    ><img
-                      class="main-content__app__user-output__button__box-img__image"
-                      alt="copia"
-                      src="./assets/images/copiar.svg"
-                  /></span>
-                  <span
-                    class="main-content__app__user-input__buttons__label__copy"
-                    id="copy-style"
-                    >Copiar</span
-                  >
-                </button>
-              </section>
-            </section>
-          </div>
-        </section>
-      </section>
-    </main>
-    <footer class="footer-content">
-      <nav class="footer-content__links">
-        <p>
-          Desenvolvido por
-          <a href="https://github.com/Jader-Moura-Lattarulo" target="_blank"
-            >Jader</a
-          >,
-        </p>
-        <p>
-          para o desafio
-          <a
-            href="https://www.alura.com.br/challenges/oracle-one"
-            target="_blank"
-            >Alura</a
-          >.
-        </p>
+      </div>
+    </section>
+    <footer class="footer-container">
+      <nav class="footer-container__links">
+        <div class="footer-container__links__build-by">
+          <p>
+            Desenvolvido por
+            <a href="https://github.com/Jader-Moura-Lattarulo" target="_blank"
+              >Jader</a
+            >,
+          </p>
+        </div>
+        <div class="footer-container__links__build-for">
+          <p>
+            para o desafio
+            <a
+              href="https://www.alura.com.br/challenges/oracle-one"
+              target="_blank"
+              >Alura</a
+            >.
+          </p>
+        </div>
       </nav>
     </footer>
     <script src="./assets/js/app.js"></script>

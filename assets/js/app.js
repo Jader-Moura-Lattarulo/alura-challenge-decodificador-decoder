@@ -1,34 +1,37 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let copyButton = document.getElementById("copy");
-    let robotImage = document.getElementById("robot");
-    let foundCopied = document.getElementById("no_found_msg_copied");
-    let useAsYouWant = document.getElementById("enter_txt");
     let userText = document.getElementById("get_txt_to_encrypt");
-    let txtEncrypted = document.getElementById("txtEncrypted");
-    let hereEncrypted = document.getElementById("hereIsEncryptedText");
-    let txtWillBeCopied = document.getElementById("txtEncrypted");
     let enterText = document.getElementById("type-here");
+    let foundCopied = document.getElementById("no_found_msg_copied");
+    let robotImage = document.getElementById("robot");
+    let useAsYouWant = document.getElementById("enter_txt");
+    let hereEncryptedDecrypted = document.getElementById("outputTitle"); //Usar o hereIs aqui
+    let txtEncryptedDecrypted = document.getElementById("txtEncryptedDecrypted");
+    let copyButton = document.getElementById("copy");
+    let hereEncrypted = document.getElementById("hereIsEncryptedText");
+    let txtWillBeCopied = document.getElementById("txtEncryptedDecrypted");
 
     copyButton.style.display = "none"; // Garante que o botão esteja invisível ao carregar a página
-    txtEncrypted.style.display = "none";
+    txtEncryptedDecrypted.style.display = "none";
+    hereEncryptedDecrypted.style.display = "none";
 
     // Função para mostrar o botão "Copiar", habilitar a área do texto encriptado para copia, o robo sumir e aparecer textos
     function showCopyButton() {
-        copyButton.style.display = "flex"; //Faz o botão aparecer usando o layout flexível
+        copyButton.style.display = "block"; 
         robotImage.style.display = "none";
-        txtEncrypted.style.display = "block";
+        hereEncryptedDecrypted.style.display = "block";
+        txtEncryptedDecrypted.style.display = "block";
         foundCopied.style.display = "none";
         useAsYouWant.style.display = "none";
-        hereEncrypted.style.display = "block";
     }
 
     // Função para esconder o botão "Copiar", aparecer o robo e textos
     function hideCopyButton() {
+        hereEncryptedDecrypted.style.display = "none";
         copyButton.style.display = "none";
         robotImage.style.display = "block";
         foundCopied.style.display = "block";
         useAsYouWant.style.display = "block";
-        txtEncrypted.style.display = "none";
+        txtEncryptedDecrypted.style.display = "none";
         hereEncrypted.style.display = "none";
         foundCopied.innerText = "Texto copiado com sucesso!";
         useAsYouWant.innerText = "Utilize seu texto como quiser!";
