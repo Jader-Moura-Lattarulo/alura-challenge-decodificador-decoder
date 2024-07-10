@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     copyButton.style.display = "none"; // Garante que o botão esteja invisível ao carregar a página
     txtEncryptedDecrypted.style.display = "none";
-    hereEncryptedDecrypted.style.display = "none";
+    hereEncryptedDecrypted.style.display = "block";
 
     // Função para mostrar o botão "Copiar", habilitar a área do texto encriptado para copia, o robo sumir e aparecer textos
     function showCopyButton() {
