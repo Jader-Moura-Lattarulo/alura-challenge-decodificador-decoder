@@ -20,6 +20,7 @@
     --font-size-footer: 1.5rem;
     --shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
     --margin-text: 3%;
+    --pointer-robot: url("../images/robot-hand50px.png"), pointer;
 }
 
 * {
@@ -168,7 +169,7 @@
     border-radius: 16px;
     align-items: center;
     font-family: var(--main-font);
-    cursor: pointer;
+    cursor: var(--pointer-robot);
     transition: ease-in-out;
     background-color: var(--letters-color);
     box-shadow: var(--shadow);
@@ -312,7 +313,7 @@
 
 .app-container__output__interactive__answer::-webkit-scrollbar-thumb:hover {
     background-color: #7194c9;
-    cursor: pointer;
+    cursor: var(--pointer-robot);
 }
 
 .app-container__output__button { 
@@ -331,7 +332,7 @@
     border-color: var(--efect-color);
     border-radius: 16px;
     font-family: var(--main-font);
-    cursor: pointer;
+    cursor: var(--pointer-robot);
     transition: ease-in-out;
     background-color: var(--letters-color);
     box-shadow: var(--shadow);
