@@ -104,7 +104,7 @@
 
 .app-container__input__user-input__area {
     margin-left: 1%;
-    width: 99%;
+    width: 97.8%;
     height: 93%;
     resize: none;
     background-color: var(--efect-color);
@@ -119,10 +119,10 @@
 
 .app-container__input__user-input__area__type-here {
     position: absolute;
-    margin-bottom: 68%;
+    margin-bottom: 65%;
     margin-left: 0.8%;
     align-items: center;
-    width: 39%;
+    width: 98%;
     transition: 0.5s;
     font-size: var(--font-size-boxes);
     color: var(--letters-color);
@@ -295,6 +295,24 @@
     outline: none;
     color: var(--letters-color);
     font-size: var(--font-size-boxes);
+}
+
+.app-container__output__interactive__answer::-webkit-scrollbar {
+    width: 10px;
+}
+
+.app-container__output__interactive__answer::-webkit-scrollbar-track {
+    background-color: var(--insideBox-bg-color);
+}
+
+.app-container__output__interactive__answer::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 8px;
+}
+
+.app-container__output__interactive__answer::-webkit-scrollbar-thumb:hover {
+    background-color: #7194c9;
+    cursor: pointer;
 }
 
 .app-container__output__button { 
