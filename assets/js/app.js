@@ -4,11 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let foundCopied = document.getElementById("no_found_msg_copied");
     let robotImage = document.getElementById("robot");
     let useAsYouWant = document.getElementById("enter_txt");
-    let hereEncryptedDecrypted = document.getElementById("outputTitle"); //Usar o hereIs aqui
+    let hereEncryptedDecrypted = document.getElementById("outputTitle");
     let txtEncryptedDecrypted = document.getElementById("txtEncryptedDecrypted");
     let copyButton = document.getElementById("copy");
-    let hereEncrypted = document.getElementById("hereIsEncryptedText");
-    let txtWillBeCopied = document.getElementById("txtEncryptedDecrypted");
 
     copyButton.style.display = "none"; // Garante que o botão esteja invisível ao carregar a página
     txtEncryptedDecrypted.style.display = "none";
@@ -16,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Função para mostrar o botão "Copiar", habilitar a área do texto encriptado para copia, o robo sumir e aparecer textos
     function showCopyButton() {
-        copyButton.style.display = "block"; 
+        copyButton.style.display = "flex"; 
         robotImage.style.display = "none";
         hereEncryptedDecrypted.style.display = "block";
         txtEncryptedDecrypted.style.display = "block";
@@ -32,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
         foundCopied.style.display = "block";
         useAsYouWant.style.display = "block";
         txtEncryptedDecrypted.style.display = "none";
-        hereEncrypted.style.display = "none";
         foundCopied.innerText = "Texto copiado com sucesso!";
         useAsYouWant.innerText = "Utilize seu texto como quiser!";
     }
@@ -107,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                        .replace(/u/g,"ufat")
                                        
 
-        hereEncrypted.innerText = "Aqui está o texto criptografado:"
+        hereEncryptedDecrypted.innerText = "Aqui está o texto criptografado:"
         txtEncryptedDecrypted.innerText = `${userText.value}`
     }
 
@@ -119,13 +116,13 @@ document.addEventListener("DOMContentLoaded", function() {
                                        .replace(/enter/g,"e")
                                        .replace(/ai/g, "a")
 
-        hereEncrypted.innerText = "Aqui está o texto descriptografado:"
+        hereEncryptedDecrypted.innerText = "Aqui está o texto descriptografado:"
         txtEncryptedDecrypted.innerText = `${userText.value}`
     }
 
     // Função para copiar o texto cripto/descriptografado
     function copy() {
-        navigator.clipboard.writeText(txtWillBeCopied.value);
+        navigator.clipboard.writeText(txtEncryptedDecrypted.value);
     }
     
     copyButton.addEventListener("click", function() {
