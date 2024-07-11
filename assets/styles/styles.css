@@ -297,20 +297,23 @@
     color: var(--letters-color);
     font-size: var(--font-size-boxes);
 }
-
+.app-container__input__user-input__area::-webkit-scrollbar ,
 .app-container__output__interactive__answer::-webkit-scrollbar {
     width: 10px;
 }
 
+.app-container__input__user-input__area::-webkit-scrollbar-track ,
 .app-container__output__interactive__answer::-webkit-scrollbar-track {
     background-color: var(--insideBox-bg-color);
 }
 
+.app-container__input__user-input__area::-webkit-scrollbar-thumb ,
 .app-container__output__interactive__answer::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border-radius: 8px;
 }
 
+.app-container__input__user-input__area::-webkit-scrollbar-thumb:hover ,
 .app-container__output__interactive__answer::-webkit-scrollbar-thumb:hover {
     background-color: #7194c9;
     cursor: var(--pointer-robot);
