@@ -373,7 +373,7 @@
 /*Query
 
 :root {
-    --footer-header-badges-height: 3rem; 
+    --footer-header-badges-height: 4rem; 
     --header-logo-height: 5rem;
     --header-total-height: calc(var(--header-logo-height) + var(--footer-header-badges-height));
     --footer-total-header-height: calc(var(--header-total-height) + var(--footer-header-badges-height));
@@ -386,12 +386,13 @@
     --hover-color: #7194c9;
     --insideBox-bg-color: #1d4178;
     --font-size-boxes: 2.8rem;
-    --font-size-title: 3.4rem;
-    --font-size-label: 2rem;
+    --font-size-title: 4.5rem;
+    --font-size-label: 2.1rem;
     --font-weigth-label: 650;
     --font-size-footer: 1.5rem;
     --shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
     --margin-text: 3%;
+    --pointer-robot: url("../images/robot-hand50px.png"), pointer;
 }
 
 .app-container__input__buttons__label {

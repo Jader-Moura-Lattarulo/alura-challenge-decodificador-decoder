@@ -73,19 +73,20 @@ document.addEventListener("DOMContentLoaded", function() {
         const isSpecialCharAndNumbers = /^[\d\W]+$/;
         
         if (specialCharacters.test(text)) {
-            let moreThan = "caracteres especiais"
+            let moreThan = "caracteres especiais";
             enterText.value = isNeeded(moreThan);
             enterText.innerHTML = enterText.value;
             clearTextArea();
             return true;
         } else if (onlyNumbers.test(text)) {
-            let moreThan = "números"
+            let moreThan = "números";
             enterText.value = isNeeded(moreThan);
             enterText.innerHTML = enterText.value;
             clearTextArea();
             return true;
         } else if (isSpecialCharAndNumbers.test(text)) {
-            let moreThan = "números e caracteres especiais"
+            enterText.style.marginBottom = "60%";
+            let moreThan = "números e caracteres especiais";
             enterText.value = isNeeded(moreThan);
             enterText.innerHTML = enterText.value;
             clearTextArea();
@@ -104,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                        .replace(/u/g,"ufat")
                                        
 
-        hereEncryptedDecrypted.innerText = "Aqui está o texto criptografado:"
+        hereEncryptedDecrypted.innerText = "Aqui está o texto criptografado:";
         txtEncryptedDecrypted.innerText = `${userText.value}`
     }
 
@@ -116,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                        .replace(/enter/g,"e")
                                        .replace(/ai/g, "a")
 
-        hereEncryptedDecrypted.innerText = "Aqui está o texto descriptografado:"
+        hereEncryptedDecrypted.innerText = "Aqui está o texto descriptografado:";
         txtEncryptedDecrypted.innerText = `${userText.value}`
     }
 
