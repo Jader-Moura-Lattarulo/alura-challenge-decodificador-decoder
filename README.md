@@ -2,14 +2,14 @@
 O objetivo principal deste desafio é experimentar a realização de um projeto real, similar ao trabalho diário de uma pessoa desenvolvedora.
 O Decodificador de Texto foi desenhado pensando na importância de aplicar de maneira prática os aprendizados obtidos nos seguintes cursos:
 
-`1-`Lógica de programação: mergulhe em programação com JavaScript;
-`2-`Lógica de programação: explore funções e listas; 
-`3-`ChatGPT: otimizando a qualidade dos resultados;
-`4-`HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags
-`5-`HTML e CSS: Classes, posicionamento e Flexbox;
-`6-`HTML e CSS: cabeçalho, footer e variáveis CSS 
-`7-`HTML e CSS: trabalhando com responsividade e publicação de projetos 
-`8-`Git e Github: compartilhando e colaborando em projetos.
+`1-` Lógica de programação: mergulhe em programação com JavaScript;
+`2-` Lógica de programação: explore funções e listas; 
+`3-` ChatGPT: otimizando a qualidade dos resultados;
+`4-` HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags
+`5-` HTML e CSS: Classes, posicionamento e Flexbox;
+`6-` HTML e CSS: cabeçalho, footer e variáveis CSS 
+`7-` HTML e CSS: trabalhando com responsividade e publicação de projetos 
+`8-` Git e Github: compartilhando e colaborando em projetos.
 
 # Enigma Machine
 ## Tema: Robô lendo livros
@@ -44,36 +44,36 @@ O Decodificador de Texto foi desenhado pensando na importância de aplicar de ma
 
 
 ## Características do Código JavaScript
-`1.`Interação com o DOM:
+`1.` Interação com o DOM:
 
   *Captura de elementos da página HTML usando getElementById.
   *Manipulação dinâmica de visibilidade de elementos (botões, mensagens, imagem do robô).
 
-`1.`Exibição Dinâmica de Elementos:
+`2.` Exibição Dinâmica de Elementos:
 
   *Funções showCopyButton e hideCopyButton para controlar a visibilidade do botão "Copiar" e outros elementos relacionados.
 
-`1.`Manipulação de Texto:
+`3.` Manipulação de Texto:
 
   *Função toLowerCase para converter o texto para letras minúsculas.
   *Função removeAccents para remover acentos do texto.
   *Funções encrypt e decrypt para substituir letras conforme as regras de criptografia/descriptografia definidas.
 
-`1.`Validação de Entrada:
+`4.` Validação de Entrada:
 
   *Funções isEmpty e isSpecialCharactersOrNumbers para garantir que a entrada seja válida antes de executar a criptografia/descriptografia.
   *Mensagens de alerta para informar o usuário sobre entradas inválidas.
 
-`1.`Funções de Utilidade:
+`5.` Funções de Utilidade:
 
   *clearTextArea para limpar o conteúdo da área de entrada.
   *isNeeded para gerar mensagens de alerta dinâmicas.
 
-`1.`Cópia para a Área de Transferência:
+`6.` Cópia para a Área de Transferência:
 
   *Função copy para copiar o texto criptografado/descriptografado para a área de transferência usando navigator.clipboard.writeText.
 
-`1.`Eventos de Clique:
+`7.` Eventos de Clique:
 
   *Adição de eventos de clique para os botões "Encrypt", "Decrypt" e "Copy", definindo as ações correspondentes.
 
