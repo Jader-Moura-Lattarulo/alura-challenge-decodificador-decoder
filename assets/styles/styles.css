@@ -47,7 +47,7 @@
     display: flex;
     align-items: center;
     gap: 2.5%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--shadow);
     width: 100%;
     height: var(--footer-header-badges-height);
 }
@@ -469,5 +469,51 @@
         width: 100%;
         height: var(--app-container-height);
         gap: 8%;
+    }
+
+    :root { 
+        --font-size-boxes: 1.4rem;
+        --font-size-title: 1.5rem;
+        --font-size-footer: 1rem;
+    }
+    
+    .app-container {
+        gap: 0%;
+    }
+    
+    .app-container__input {
+        width: 85%;
+        height: 55%;
+    }
+    
+    .app-container__input__user-input__area__type-here {
+        margin-top: 37%;
+    }
+    
+    .app-container__input__warning__txt {
+        font-size: 0.7rem;
+    }
+    
+    .app-container__output {
+        width: 85%;
+        height: 40%;
+    }
+    
+    .app-container__output__non-interactive__img__robot { 
+        margin-left: 38%;
+        margin-top: 1%;
+        width: 20%;
+    }
+    
+    .main-content__app__user-output__msg__enter-text {
+        font-size: 1rem;
+    }
+    
+    .footer-container__links__build-by {
+        margin-left: -100%;
+    }
+    
+    .footer-container__links__build-for {
+        margin-left: -100%;
     }
 }
