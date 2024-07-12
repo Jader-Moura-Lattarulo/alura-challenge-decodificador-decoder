@@ -454,24 +454,8 @@
     }
 }
 
-
+/* media para celular*/
 @media (max-width: 1000px) {
-    .app-container__output__non-interactive__img__robot { 
-        margin-left: 18%;
-        margin-top: 6%;
-        width: 65%;
-    }
-
-    .app-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: var(--app-container-height);
-        gap: 8%;
-    }
-
     :root { 
         --font-size-boxes: 1.4rem;
         --font-size-title: 1.5rem;
@@ -479,6 +463,7 @@
     }
     
     .app-container {
+        flex-direction: column;
         gap: 0%;
     }
     
@@ -519,6 +504,28 @@
     }
 }
 
+/*media para celular pequeno*/
 @media (max-width: 645px) {
+    :root {
+        --footer-header-badges-height: 3rem; 
+        --header-logo-height: 4rem;
+    }
+}
 
+/*media para celular muito pequeno*/
+@media (max-width: 475px) {
+    :root {
+        --footer-header-badges-height: 2rem; 
+        --header-logo-height: 3rem;
+        --font-size-title: 1.2rem;
+    }
+
+    .app-container__output__non-interactive__img__robot { 
+        margin-left: 35%;
+        width: 30%;
+    }
+    
+    .footer-container__links {
+        display: none;
+    }
 }
