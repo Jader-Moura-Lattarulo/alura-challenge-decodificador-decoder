@@ -373,6 +373,7 @@
     height: 1rem;
 }
 
+/*Monitores de notebook*/
 @media (max-width: 1550px) {
     :root {
         --footer-header-badges-height: 4rem; 
@@ -408,15 +409,52 @@
         margin-top: 5%;
     }
 }
-
-@media (max-width:1400px) {
+/*Tira as labels dos botões*/
+@media (max-width: 1460px) {
     .app-container__input__buttons__label,
     .app-container__output__button__label__copy {
         display: none;
     }
 }
 
-@media (max-width: 1175px) {
+/*Ajuste para não quebrar em transição*/
+@media (max-width: 1150px) {
+    :root {
+        --footer-header-badges-height: 4rem; 
+        --header-logo-height: 5rem;
+        --font-size-boxes: 1.8rem;
+        --font-size-title: 2rem;
+        --font-size-label: 1.3rem;
+        --font-size-footer: 1.5rem;
+        --margin-text: 3%;
+    }
+
+    .app-container__input__user-input__area__type-here {
+        margin-bottom: 40%;
+    }
+
+    .app-container__output__non-interactive__img__robot { 
+        margin-left: 18%;
+        margin-top: 6%;
+        width: 55%;
+    }
+
+    .app-container__input__warning__txt {
+        font-size: 0.8rem;
+    }
+
+    .main-content__app__user-output__msg__enter-text {
+        font-size: 1.4rem;
+    }
+
+    .app-container__input__buttons__label,
+    .app-container__output__button__label__copy {
+        margin-top: 5%;
+    }
+}
+
+
+@media (max-width: 1000px) {
     .app-container__output__non-interactive__img__robot { 
         margin-left: 18%;
         margin-top: 6%;
