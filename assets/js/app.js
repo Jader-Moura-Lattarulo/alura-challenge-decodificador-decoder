@@ -98,9 +98,9 @@ document.addEventListener("DOMContentLoaded", function() {
     
     //Função para criptografar textos
     function encrypt() {
-        userText.value = userText.value.replace(/a/g,"ai")
-                                       .replace(/e/g,"enter")
+        userText.value = userText.value.replace(/e/g,"enter")
                                        .replace(/i/g,"imes")
+                                       .replace(/a/g,"ai")
                                        .replace(/o/g,"ober")
                                        .replace(/u/g,"ufat")
                                        
@@ -111,11 +111,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Função para criptografar textos
     function decrypt() {
-        userText.value = userText.value.replace(/ufat/g,"u")
-                                       .replace(/ober/g,"o")
+        userText.value = userText.value.replace(/enter/g,"e")
                                        .replace(/imes/g,"i")
-                                       .replace(/enter/g,"e")
                                        .replace(/ai/g, "a")
+                                       .replace(/ober/g,"o")
+                                       .replace(/ufat/g,"u")
 
         hereEncryptedDecrypted.innerText = "Aqui está o texto descriptografado:";
         txtEncryptedDecrypted.innerText = `${userText.value}`
