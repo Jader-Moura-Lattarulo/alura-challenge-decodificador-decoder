@@ -43,7 +43,7 @@ O Decodificador de Texto foi desenhado pensando na importância de aplicar de ma
   * Footer com links para o meu portifólio e site da alura.
 
 
-##Características do Código JavaScript
+## Características do Código JavaScript
 `1.`Interação com o DOM:
 
   *Captura de elementos da página HTML usando getElementById.
