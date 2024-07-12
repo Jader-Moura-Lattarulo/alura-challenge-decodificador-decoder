@@ -18,6 +18,7 @@
     --font-size-label: 2.1rem;
     --font-weigth-label: 650;
     --font-size-footer: 1.5rem;
+    --shadow-badges: rgba(0, 0, 0, 0.3);
     --shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
     --margin-text: 3%;
     --pointer-robot: url("../images/robot-hand50px.png"), pointer;
@@ -47,7 +48,7 @@
     display: flex;
     align-items: center;
     gap: 2.5%;
-    background-color: var(--shadow);
+    background-color: var(--shadow-badges);
     width: 100%;
     height: var(--footer-header-badges-height);
 }
@@ -516,4 +517,8 @@
     .footer-container__links__build-for {
         margin-left: -100%;
     }
+}
+
+@media (max-width: 645px) {
+
 }
