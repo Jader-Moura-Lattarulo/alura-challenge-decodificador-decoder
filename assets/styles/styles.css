@@ -607,6 +607,10 @@
         margin-top: 3%;
         font-size: 1rem;
     }
+    
+    .app-container__output__interactive__title-place__msg {
+        font-size: 1.2rem;
+    }
 
     .app-container__input__warning__txt {
         font-size: 0.7rem;
