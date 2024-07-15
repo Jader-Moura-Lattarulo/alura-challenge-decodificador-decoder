@@ -468,8 +468,8 @@
 /* media para celular*/
 @media (max-width: 1000px) {
     :root { 
-        --font-size-boxes: 1.4rem;
-        --font-size-title: 1.5rem;
+        --font-size-boxes: 2rem;
+        --font-size-title: 2.6rem;
         --font-size-footer: 1rem;
     }
     
@@ -484,11 +484,11 @@
     }
     
     .app-container__input__user-input__area__type-here {
-        margin-top: 37%;
+        margin-top: 10%;
     }
     
     .app-container__input__warning__txt {
-        font-size: 0.7rem;
+        font-size: 1.9rem;
     }
     
     .app-container__output {
@@ -503,7 +503,7 @@
     }
     
     .main-content__app__user-output__msg__enter-text {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     
     .footer-container__links__build-by {
