@@ -455,7 +455,7 @@
 }
 
 /* media para celular*/
-@media (max-width: 970px) {
+@media (max-width: 980px) {
     :root { 
         --font-size-boxes: 1.4rem;
         --font-size-title: 1.5rem;
