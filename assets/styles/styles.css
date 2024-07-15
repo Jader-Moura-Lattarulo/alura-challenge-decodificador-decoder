@@ -609,7 +609,7 @@
     }
     
     .app-container__output__interactive__title-place__msg {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .app-container__input__warning__txt {
@@ -623,5 +623,12 @@
     
     .footer-container__links {
         display: none;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .main-content__app__user-output__msg__enter-text {
+        font-size: 0.9rem;
     }
 }
