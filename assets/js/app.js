@@ -95,6 +95,20 @@ document.addEventListener("DOMContentLoaded", function() {
             return false;
         }
     }
+
+    // Função para simular digitação no output
+    function simulateTyping() {
+        let textToType = userText.value;
+        let index = 0;
+        let interval = setInterval(function() {
+            txtEncryptedDecrypted.innerText += textToType.substr(0, index + 1);
+            index++;
+            if (index >= textToType.length) {
+                clearInterval(interval);
+                userText.style.animation = "none";
+            }
+        } , 100);
+    }
     
     //Função para criptografar textos
     function encrypt() {
@@ -106,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                        
 
         hereEncryptedDecrypted.innerText = "Aqui está o texto criptografado:";
+        simulateTyping();
         txtEncryptedDecrypted.innerText = `${userText.value}`
     }
 
@@ -118,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                        .replace(/ufat/g,"u")
 
         hereEncryptedDecrypted.innerText = "Aqui está o texto descriptografado:";
+        simulateTyping();
         txtEncryptedDecrypted.innerText = `${userText.value}`
     }
 
