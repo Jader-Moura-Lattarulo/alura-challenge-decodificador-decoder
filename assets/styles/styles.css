@@ -592,7 +592,24 @@
     :root {
         --footer-header-badges-height: 2rem; 
         --header-logo-height: 3rem;
-        --font-size-title: 1.2rem;
+        --font-size-boxes: 1rem;
+    }
+
+    .app-container__output__non-interactive__title-msg__no-message {
+        font-size: 1.2rem;
+    }
+
+    .main-content__app__user-output__msg__enter-text {
+        font-size: 1rem;
+    }
+
+    .app-container__input__user-input__area__type-here {
+        margin-top: 3%;
+        font-size: 1rem;
+    }
+
+    .app-container__input__warning__txt {
+        font-size: 0.7rem;
     }
 
     .app-container__output__non-interactive__img__robot { 
