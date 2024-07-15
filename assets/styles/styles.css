@@ -516,10 +516,33 @@
 }
 
 /*media para celular pequeno*/
-@media (max-width: 645px) {
+@media (max-width: 999px) {
     :root {
         --footer-header-badges-height: 3rem; 
+        --font-size-title: 1.96rem;
         --header-logo-height: 4rem;
+    }
+
+    .app-container__input__user-input__area__type-here {
+        margin-top: 20%;
+    }
+
+    .app-container__input__warning__txt {
+        font-size: 1rem;
+    }
+
+    .app-container__output__non-interactive__img__robot { 
+        margin-left: 32%;
+        margin-top: 1%;
+        width: 30%;
+    }
+
+    .app-container__output__non-interactive__title-msg__no-message {
+        font-size: 2rem;
+    }
+    
+    .main-content__app__user-output__msg__enter-text {
+        font-size: 1.2rem;
     }
 }
 
