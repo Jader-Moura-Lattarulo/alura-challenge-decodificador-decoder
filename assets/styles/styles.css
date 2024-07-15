@@ -386,7 +386,7 @@
 }
 
 /*Monitores de notebook*/
-@media (max-width: 1550px) {
+@media (max-width: 1920px) {
     :root {
         --footer-header-badges-height: 4rem; 
         --header-logo-height: 5rem;
