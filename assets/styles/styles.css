@@ -385,6 +385,41 @@
     height: 1rem;
 }
 
+@media (max-width: 2250px) {
+    :root {
+        --footer-header-badges-height: 4rem; 
+        --header-logo-height: 5rem;
+        --font-size-boxes: 1.8rem;
+        --font-size-title: 2.8rem;
+        --font-size-label: 1.7rem;
+        --font-size-footer: 1.5rem;
+        --margin-text: 3%;
+    }
+
+    .app-container__input__user-input__area__type-here {
+        margin-bottom: 50%;
+    }
+
+    .app-container__output__non-interactive__img__robot { 
+        margin-left: 25%;
+        margin-top: 6%;
+        width: 45%;
+    }
+
+    .app-container__input__warning__txt {
+        font-size: 1.7rem;
+    }
+
+    .main-content__app__user-output__msg__enter-text {
+        font-size: 2rem;
+    }
+
+    .app-container__input__buttons__label,
+    .app-container__output__button__label__copy {
+        margin-top: 5%;
+    }
+}
+
 /*Monitores de notebook*/
 @media (max-width: 2050px) {
     :root {
@@ -408,7 +443,7 @@
     }
 
     .app-container__input__warning__txt {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .main-content__app__user-output__msg__enter-text {
@@ -419,6 +454,12 @@
     .app-container__input__buttons__label,
     .app-container__output__button__label__copy {
         margin-top: 5%;
+    }
+}
+
+@media (max-width: 1609px) {
+    .app-container__input__warning__txt {
+        font-size: 1.2rem;
     }
 }
 /*Tira as labels dos botões*/
@@ -532,9 +573,9 @@
     }
 
     .app-container__output__non-interactive__img__robot { 
-        margin-left: 32%;
+        margin-left: 33%;
         margin-top: 1%;
-        width: 30%;
+        width: 27%;
     }
 
     .app-container__output__non-interactive__title-msg__no-message {
