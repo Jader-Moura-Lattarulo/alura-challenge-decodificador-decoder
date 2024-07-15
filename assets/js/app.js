@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let hereEncryptedDecrypted = document.getElementById("outputTitle");
     let txtEncryptedDecrypted = document.getElementById("txtEncryptedDecrypted");
     let copyButton = document.getElementById("copy");
+    let changeFont = document.querySelector(".app-container__output__interactive__answer");
 
     copyButton.style.display = "none"; // Garante que o botão esteja invisível ao carregar a página
     txtEncryptedDecrypted.style.display = "none";
@@ -96,8 +97,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Função para simular digitação no output
+    // Função para simular digitação no output e faz a troca de fontes para simular uma variação
     function simulateTyping() {
+        changeFont.style.setProperty("font-family", "var(--font-typing)");
         let textToType = userText.value;
         let index = 0;
         let interval = setInterval(function() {
@@ -106,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (index >= textToType.length) {
                 clearInterval(interval);
                 userText.style.animation = "none";
+                changeFont.style.setProperty("font-family", "var(--main-font)")
             }
         } , 100);
     }

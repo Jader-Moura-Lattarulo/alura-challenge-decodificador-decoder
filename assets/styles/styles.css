@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
 
+  
 :root {
     --footer-header-badges-height: 4rem; 
     --header-logo-height: 5rem;
@@ -12,6 +14,7 @@
     --footer-bg-color-gradient: linear-gradient(90deg, #FFC26F 0%, #E19F46 50%, #FFC26F 100%);
     --letters-color: #FEFAF6;
     --main-font: "Source Code Pro", monospace;
+    --font-typing: "Libre Barcode 128", system-ui;
     --efect-color: transparent;
     --hover-color: #7194c9;
     --insideBox-bg-color: #1d4178;
@@ -302,6 +305,7 @@
     background-color: var(--efect-color);
     border: var(--efect-color);
     outline: none;
+    font-family: var(--main-font);
     color: var(--letters-color);
     font-size: var(--font-size-boxes);
 }
