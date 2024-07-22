@@ -405,9 +405,9 @@
     }
 
     .app-container__output__non-interactive__img__robot { 
-        margin-left: 25%;
+        margin-left: 18%;
         margin-top: 6%;
-        width: 45%;
+        width: 60%;
     }
 
     .app-container__input__warning__txt {
@@ -491,9 +491,9 @@
     }
 
     .app-container__output__non-interactive__img__robot { 
-        margin-left: 18%;
+        margin-left: 10%;
         margin-top: 6%;
-        width: 55%;
+        width: 75%;
     }
 
     .app-container__input__warning__txt {
