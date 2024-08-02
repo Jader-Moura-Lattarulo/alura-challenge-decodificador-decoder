@@ -35,7 +35,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.title {
+    color: transparent;
+    position: absolute;
+}
 .body-content{
     min-height: 100vh;
     font-family: var(--main-font);
