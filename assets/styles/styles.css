@@ -40,6 +40,7 @@
     position: absolute;
     font-size: 0.01px;
 }
+
 .body-content{
     min-height: 100vh;
     font-family: var(--main-font);
